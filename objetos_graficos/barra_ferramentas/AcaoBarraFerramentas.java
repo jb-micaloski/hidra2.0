@@ -1,0 +1,151 @@
+/*     */ package ipqm.gsd.hidra.ihm.objetos_graficos.barra_ferramentas;
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ public interface AcaoBarraFerramentas
+/*     */ {
+/*     */   void acaoBotaoBarraFerramentas(Acao paramAcao);
+/*     */   
+/*     */   public enum Acao
+/*     */   {
+/*  18 */     MOVIMENTACAO_3D,
+/*  19 */     SELECAO,
+/*  20 */     MOVIMENTACAO,
+/*  21 */     COMPASSO,
+/*  22 */     GRADE,
+/*  23 */     PPN,
+/*  24 */     ZOOM_MAIS,
+/*  25 */     ZOOM_MENOS,
+/*  26 */     ARBITRAGEM,
+/*  27 */     MOVIMENTO_RADAR,
+/*  28 */     ESCALA_0_125MN,
+/*  29 */     ESCALA_0_25MN,
+/*  30 */     ESCALA_0_50MN,
+/*  31 */     ESCALA_0_75MN,
+/*  32 */     ESCALA_1_5MN,
+/*  33 */     ESCALA_3MN,
+/*  34 */     ESCALA_6MN,
+/*  35 */     ESCALA_12MN,
+/*  36 */     ESCALA_24MN,
+/*  37 */     ESCALA_48MN,
+/*  38 */     ESCALA_96MN,
+/*  39 */     ORIENTACAO,
+/*  40 */     CRIAR_ACO_MANUAL,
+/*  41 */     CRIAR_ROTA,
+/*  42 */     CRIAR_AREA_EXE_CIRCULAR,
+/*  43 */     CRIAR_AREA_EXE,
+/*  44 */     CRIAR_PONTO_FIXO,
+/*  45 */     CRIAR_PONTO_MAGE,
+/*  46 */     CRIAR_PONTO_MANUAL,
+/*  47 */     CRIAR_PONTO_SPLASH,
+/*  48 */     CRIAR_PONTO_DATUM,
+/*  49 */     AMBIENTE,
+/*  50 */     EXERCICIO,
+/*  51 */     ALARMES,
+/*  52 */     SITREP,
+/*  53 */     PMA,
+/*  54 */     CORRECAO_MANUAL,
+/*  55 */     MANOBRA_DADO_TEMPO,
+/*  56 */     MANOBRA_DADO_VELOCIDADE,
+/*  57 */     MANOBRA_PASSAR_SAFO,
+/*  58 */     ESCALA_2KJ,
+/*  59 */     ESCALA_4KJ,
+/*  60 */     ESCALA_8KJ,
+/*  61 */     ESCALA_10KJ,
+/*  62 */     ESCALA_15KJ,
+/*  63 */     ESCALA_16KJ,
+/*  64 */     ESCALA_32KJ,
+/*  65 */     CRIAR_ACO_SONAR_AUTO,
+/*  66 */     CRIAR_ACO_SONAR_MANUAL,
+/*  67 */     CRIAR_VEICULO,
+/*  68 */     CRIAR_SIMBOLO,
+/*  69 */     CRIAR_TEXTO,
+/*  70 */     CRIAR_PROFUNDIDADE,
+/*  71 */     CRIAR_AREA_EXE_CIRCULAR_CM,
+/*  72 */     CRIAR_AREA_EXE_POLIGONAL_CM,
+/*  73 */     SINAL_PERSISTENCIA,
+/*  74 */     CONFIGURACOES,
+/*  75 */     RELOGIO,
+/*  76 */     RELOGIO_PARADO,
+/*  77 */     RELOGIO_PARTIDO,
+/*  78 */     RELOGIO_1X,
+/*  79 */     RELOGIO_2X,
+/*  80 */     RELOGIO_4X,
+/*  81 */     RELOGIO_8X,
+/*  82 */     RELOGIO_16X,
+/*  83 */     RELOGIO_32X,
+/*  84 */     RELOGIO_64X,
+/*  85 */     SONAR_PASSIVO,
+/*  86 */     DADOS_EMISSOR,
+/*  87 */     FILTRO_CARTAS,
+/*  88 */     FILTRO_SATELITE,
+/*  89 */     FILTRO_RADAR,
+/*  90 */     PLAY,
+/*  91 */     PAUSE,
+/*  92 */     STOP,
+/*  93 */     CARREGAR_EXERCICIO,
+/*  94 */     SITREP_REPRODUCAO_EXERCICIO,
+/*  95 */     DESENHO,
+/*  96 */     ZOOM,
+/*  97 */     IFF,
+/*  98 */     CLASSIFICACAO_ACOMPANHAMENTO,
+/*  99 */     FILTROS_MAGE,
+/* 100 */     GOTO,
+/* 101 */     BUSCADOR_TILES,
+/* 102 */     MODELO,
+/* 103 */     VEICULO_TABELA_A,
+/* 104 */     QUESTIONARIO,
+/* 105 */     PLACAR,
+/* 106 */     CALCULAR_VENTO_REAL,
+/* 107 */     CONFIGURACOES_CARTAS,
+/* 108 */     ALOCAR_VEICULO,
+/* 109 */     VEICULO_TABELA_B,
+/* 110 */     LINHA_FORMATURA,
+/* 111 */     INCIDENTE_SAR,
+/* 112 */     FILTRO_MAPAS,
+/* 113 */     FILTRO_TATICO,
+/* 114 */     DESIGNACAO_TI,
+/* 115 */     MODO_OPERACAO,
+/* 116 */     STANDARD_DISPLAY,
+/* 117 */     CENTRAR_TEATRO,
+/*     */     
+/* 119 */     LINHA_MARCACAO,
+/* 120 */     CRIAR_ELEMENTO_NAVEGACAO,
+/*     */ 
+/*     */     
+/* 123 */     RANGE_RINGS,
+/* 124 */     EBL,
+/* 125 */     VRM,
+/* 126 */     IPL,
+/* 127 */     NAVEGACAO_VISUAL,
+/* 128 */     POSICIONAR_SRU,
+/* 129 */     RADAR_CT,
+/* 130 */     EXPANDIR_CENARIO_TATICO,
+/* 131 */     MASTROS,
+/* 132 */     HORARIO,
+/* 133 */     ESCALA_RADAR,
+/* 134 */     ICAR_ARRIAR_PERISCOPIO,
+/* 135 */     ICAR_ARRIAR_PERISCOPIO_ATAQUE,
+/* 136 */     ESCALA_RADAR_3MN,
+/* 137 */     ESCALA_RADAR_6MN,
+/* 138 */     ESCALA_RADAR_12MN,
+/* 139 */     ESCALA_RADAR_24MN,
+/* 140 */     ESCALA_RADAR_48MN,
+/* 141 */     ESCALA_RADAR_96MN,
+/* 142 */     LIBERACAO_EXTERNA,
+/* 143 */     PAINEL_CORRECAO_MANUAL;
+/*     */   }
+/*     */ }
+
+
+/* Location:              /mnt/c/Users/jbmic/OneDrive/Área de Trabalho/hidra/hidra.jar!/ipqm/gsd/hidra/ihm/objetos_graficos/barra_ferramentas/AcaoBarraFerramentas.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.3
+ */
