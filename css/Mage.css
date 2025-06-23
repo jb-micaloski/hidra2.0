@@ -1,0 +1,524 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06/08/2014, 11:03:41
+    Author     : Fernanda Ferreira
+*/
+
+#painelPreto{
+    -fx-background-color: black;
+}
+#painelCinza{
+    -fx-background-color: #3d3d3d;
+}
+
+#painelTraslucido1{
+    -fx-background-color: black;
+    -fx-opacity: 0.65;
+
+}
+#painelMage{
+    -fx-background-color: #00002b;
+}
+
+#circulosMage{
+    -fx-image: url("../imagens/mage.png");
+}
+
+#botaoApagar{
+    -fx-graphic: url("../imagens/icones/apagar.png");
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER_LEFT;
+}
+
+#btnApagar:pressed{
+    -fx-background-color: yellow;
+    -fx-alignment: CENTER_LEFT;
+}
+
+label{
+    -fx-text-fill: white;
+}
+
+#checkBox {
+    -fx-font-size: 20px;
+    -fx-control-inner-background: #194373;
+    -fx-text-fill: #FFFFFF;
+}
+
+#labelVermelho{
+    -fx-text-fill:red;
+}
+
+#tabelaForm {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+    -fx-border-width: 0.3px;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+#tabelaForm .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 0px;
+}
+
+#tabelaForm .column-header .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+#tabelaForm  .table-row-cell:selected {
+    -fx-background-color:#0084d3;
+
+}
+
+#tabelaForm .column {
+    background: black;
+    -fx-border-color: transparent;
+}
+
+#tabelaForm .table-view .scroll-bar:vertical .track, .table-view .scroll-bar:vertical .increment-button, .table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color:#3d3d3d;
+    -fx-border-color: #1d1d1d;
+    -fx-border-size: 1;
+}
+
+#labelMage{
+    -fx-text-fill: white;
+}
+
+.radio-button .radio{
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+
+.radio-button:selected .radio{
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+
+.radio-button:selected .radio{
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+.radio-button:selected .radio .dot{
+    -fx-background-image: url("../imagens/icones/selecionado.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+}
+
+#painelFundoPreto{
+    -fx-background-color: black;
+}
+
+#fundoTransparente{
+    -fx-background-color: transparent;
+}
+
+#imagemRodada{
+    -fx-background-color: black;
+    -fx-background-radius: 100.0;
+}
+
+#fundoAzul{
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+    -fx-border-color: white;
+}
+
+#contextMenuMage{
+    -fx-background-color: #3d3d3d;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+}
+
+#contextMenuMage .label{
+    -fx-text-fill: white;
+}
+#contextMenuMage .menu-item {
+    -fx-background-color: #3d3d3d;
+    -fx-padding: 0.666666em 0.999999em 0.4999995em 0.999999em;   /*6 12 6 12 */
+}
+
+#contextMenuMage .menu-item:focused {
+    -fx-background: -fx-accent;
+    -fx-background-color: #919191;
+}
+
+#contextMenuMage .menu-item:pressed {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#contextMenuMage .menu-item:pressed .label {
+    -fx-text-fill: white;
+}
+
+#contextMenuMage .menu-item:disabled .label{
+    -fx-text-fill: transparent;
+}
+
+#contextMenuMage .menu-item:hover{
+    -fx-background-color: #919191;
+}
+
+#contextMenuMage .menu-item:disabled { 
+    visibility: hidden; -fx-padding: -1em;
+}
+
+#contextMenuMage .menu-item:disabled .label, #contextMenuMage .menu-item:disabled .arrow {
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+}
+
+
+#tabelaDicaMage{
+    -fx-table-cell-border-color: transparent;
+    -fx-table-cell-background-color: #194373;
+    -fx-table-header-border-color: white;
+    -fx-control-inner-background: #194373;
+    -fx-background-color: #194373;
+    -fx-text-fill: #194373;
+    -fx-font-size: 11;
+}
+#tabelaDicaMage .column-header-background { visibility: hidden; -fx-padding: -1em; }
+
+#fundoAzulBordaDireita{
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+    -fx-border-width: 0 1 1 0;
+    -fx-border-color: white;
+}
+
+#tarefaSelecaoToggleButton {
+    -fx-graphic: url("../imagens/icones/selecao.png");
+}
+
+#botaoFaixa{ 
+    -fx-graphic: url("../imagens/icones/faixat.png");
+    -fx-background-color: transparent;
+}
+
+#botaoSitrep{ 
+    -fx-graphic: url("../imagens/icones/iconeSitrep.png");
+    -fx-background-color: transparent;
+}
+
+#botaoPersistencia{ 
+    -fx-graphic: url("../imagens/icones/filtro.png");
+    -fx-background-color: transparent;
+}
+
+#botaoConfig{ 
+    -fx-graphic: url("../imagens/icones/configuracoes.png");
+    -fx-background-color: transparent;
+}
+
+#contextMenu{
+    -fx-background-color: #194373;
+    -fx-opacity: 1;
+    -fx-border-color: white;
+}
+
+#contextMenu .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#painelBotoes {
+    -fx-background-color: transparent;
+    -fx-opacity: 1;
+    /*    -fx-background-radius: 5.0;
+        -fx-background-insets: 0.0 5.0 0.0 5.0;
+        -fx-padding: 3;
+        -fx-hgap: 0;
+        -fx-vgap: 0;
+        -fx-spacing: 5;*/
+}
+
+
+#painelBotoes .button{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+#painelBotoes .button:hover{
+    -fx-background-color:#3673b8;
+}
+
+#painelBotoes .toggle-button{
+    -fx-background-color: transparent;
+}
+
+#painelBotoes .toggle-button:selected{
+    -fx-background-color:#3673b8;
+}
+
+#btnMoverPanel{ 
+    -fx-graphic: url("../imagens/icones/iconeMover.png");
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+}
+
+#btnRotacionarPanel{
+    -fx-graphic: url("../imagens/icones/iconeGirar.png");
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+}
+
+#btnMoverPanel:hover,#btnFecharPanel:hover,#btnFechar:hover,#btnRotacionarPanel:hover,#labelTitulo:hover{ 
+    -fx-opacity: 1;
+}
+
+#labelTitulo{
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+    -fx-background-radius: 3.0;
+    -fx-text-fill: white;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+#btnFecharPanel{ 
+    -fx-graphic: url("../imagens/icones/iconeFechar.png");
+    -fx-background-color: #194373;
+    -fx-opacity: 0.5;
+}
+
+.table-view .column-header .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/*#tabelaForm .table-view .column {
+    -fx-border-color: transparent;
+}*/
+
+#tabelaForm.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: #919191;
+}
+
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.table-row-cell .table-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+#tabelaForm .table-row-cell:selected{
+    -fx-background-color: #919191;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.slider .thumb{
+    -fx-background-image :url("../imagens/icones/iconeSlider.png");
+    -fx-background-color: transparent;
+}
+
+#botaoAvariado{
+    -fx-background-color: #B10000;
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-font-size: 20px;
+    -fx-text-fill: white;    
+}
+#botaoHabilitado{
+    -fx-background-color: #007200;
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+#botaoDesligado{
+    -fx-background-color: #999999;
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+#radioButton1 {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+}
+
+#radioButton1 .radio  {
+    -fx-background-color: transparent;
+    /*-fx-border-color: #999999;*/
+    -fx-background-position: center bottom;
+    -fx-background-repeat: no-repeat space;
+    /*-fx-padding: 4px;  4 -- padding from outside edge to the inner black dot */
+}
+
+#radioButton1:hover .radio {
+    -fx-border-color: #919191;
+}
+
+
+#radioButton1 .dot {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    /*-fx-background-radius: 1.0em;  large value to make sure this remains circular */
+    /*-fx-padding: 6px;  3 -- radius of the inner black dot when selected */
+}
+
+#radioButton1:selected .dot {
+    -fx-background-color: transparent;
+}
+
+#radioButton1:disabled {
+    -fx-opacity: 0.5;
+}
+
+#radioButton1:disabled .radio {
+    -fx-background-color: transparent;
+}
+
+#radioButton1:focused .radio {
+    -fx-background-color: transparent;
+}
+#radioButton1:armed .radio {
+    -fx-background-color: #212121;
+}
+
+#radioButton1:pressed .radio {
+    -fx-background-color: transparent;
+}
+
+#radioButton1:pressed:selected .dot {
+    -fx-background-color: transparent;
+}
+
+#radioButton1:armed .dot {
+    -fx-background-color: black;
+}
+
+#radioButton1:focused:armed .radio {
+    -fx-background-color: #212121;
+    -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+    -fx-background-insets: 0;
+    -fx-border-style: solid, segments(1, 1);
+    /*    -fx-border-radius: 1.0em, 0;
+        -fx-border-color: #999999, #999999;
+        -fx-border-insets: 0px, -2px;
+        -fx-border-width: 1px, 1px;*/
+    -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */  
+}
+
+.chart {
+    -fx-background-color: black;
+    -fx-background-insets: 0, 1;
+    -fx-font-size: 0.9em;
+}
+
+.chart-plot-background {
+    -fx-background-color: black; 
+}
+
+.chart-legend {
+    -fx-background-color:  transparent;
+}
+.chart-legend-item{
+    -fx-text-fill: transparent;
+}
+
+.chart-symbol{ 
+    -fx-stroke: transparent;
+    -fx-shape: null;  
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+}
+#aba1:selected{
+    -fx-background-color: black;
+}
+
+
+#painelAbas1 .tab-header-area .tab-header-background{
+    -fx-background-color: #3d3d3d;
+}
+
+#aba1 .tab-label { 
+    -fx-text-fill: white;
+}
+
+#aba1 .tab-label:selected { 
+    -fx-text-fill: black;
+    -fx-border-width: 0px;
+}
+
+#aba1 {
+    -fx-background-color: #3d3d3d;
+}
+
+#botaoJanelaPretoPequeno{
+    -fx-padding: 5 22 5 22;  
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-background-size: 100 100;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #060b11;
+    -fx-font-size: 13px;
+    -fx-text-fill: white;    
+}
+
+#botaoJanelaPretoPequeno:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-font-size: 14px;
+    -fx-background-color: #303030
+}
+
+#tabelaForm .table-view .scroll-bar:horizontal .track, .table-view .scroll-bar:horizontal .increment-button, .table-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+
+}
+
+#tabelaAlterarCAT {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: black;
+    -fx-table-cell-border-color: white;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+    -fx-border-width: 0.3px;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+

@@ -1,0 +1,160 @@
+#barraDebug {
+    -fx-background-color: #000000;
+    -fx-opacity: 0.5;
+}
+
+#barraDebug:hover {
+    -fx-opacity: 0.9;
+}
+
+#barraDebug .label{
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
+}
+
+#painelDebug{
+    -fx-background-color: #000000;
+    -fx-opacity: 0.95;
+}
+
+#painelDebug .label{
+    -fx-text-fill: #FFFFFF;
+}
+
+#painelDebug .titled-pane {
+    -fx-background-color: #000000; 
+    -fx-text-fill:white;   
+}
+
+
+#painelDebug .titled-pane .title {
+    -fx-font-size: 12;
+    -fx-border-size: 10;
+    -fx-border-color: white;
+    -fx-background-color: #000000;
+}
+
+#painelDebug .titled-pane .content{
+    -fx-background-color: #000000
+}
+
+#painelDebug .table-view{
+    -fx-border-color: #FFFFFF;
+    -fx-border-size: 3;
+    -fx-background-color: #000000;
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+}
+
+#painelDebug .table-view:odd{
+    -fx-control-inner-background: #000000;
+}
+
+#painelDebug .table-view:even{
+    -fx-control-inner-background: #333333;
+}
+
+#painelDebug .table-view .column-header .label{
+    -fx-text-fill: #FFFFFF;
+}
+
+#painelDebug .table-view .column-header {
+    -fx-background-color: #000000;
+    -fx-border-size: 1;
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-font-size: 12;
+    -fx-text-fill: #FFFFFF;   
+}
+
+#painelDebug .table-view .scroll-bar:vertical .track, .table-view .scroll-bar:vertical .increment-button,
+#painelDebug .table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #555555;
+    -fx-border-color: #AAAAAA;
+    -fx-border-size: 1;
+}
+
+#painelDebug .table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+}
+
+#painelDebug .table-view .scroll-bar .thumb{
+    -fx-background-color:#333333;
+    -fx-border-color: #AAAAAA;
+    -fx-border-size: 1;
+}
+
+#painelDebug .table-view .column {
+    -fx-border-color: transparent;
+}
+
+#painelDebug .table-view .table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#painelDebug .table-view .table-row-cell:selected {
+    -fx-background-color: #395393;
+    -fx-border-color: transparent;
+}
+
+#painelDebug .table-view .table-row-cell .table-cell{
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+#painelDebug .table-view .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+#painelDebug .table-view .scroll-bar .thumb {
+    -fx-background-color:#3d3d3d;
+    -fx-border-color: #1d1d1d;
+    -fx-border-size: 1;
+}
+
+#graficoDebug .chart {
+    -fx-background-color: black;
+    -fx-background-insets: 0, 1;
+    -fx-font-size: 0.9em;
+}
+
+#graficoDebug .chart-plot-background {
+    -fx-background-color: black; 
+}
+
+#graficoDebug .chart-legend {
+    -fx-background-color:  transparent;
+    -fx-padding: 20px;
+}
+
+
+#painelDebug .text-area{
+    -fx-background-color: #333333; 
+    -fx-font-size: 12px;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-inner-color: #FFFFFF;
+}
+
+#painelDebug .button{
+    -fx-border-style: solid;
+    -fx-border-color: whitesmoke;
+    -fx-border-width: 1;        
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #000000;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;    
+}
+
+#painelDebug .button:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+}
+
+#painelDebug .button:pressed{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}

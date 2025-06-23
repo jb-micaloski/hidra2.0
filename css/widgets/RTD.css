@@ -1,0 +1,46 @@
+#anchorPaneRTD {
+    -fx-background-color: #020000;    
+    -fx-border-color: black;
+    -fx-text-fill:#FFFFFF;
+}
+
+#painelChat {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#FFFFFF;
+}
+
+.button{
+    -fx-border-style: solid;
+    -fx-border-color: whitesmoke;
+    -fx-border-width: 1;        
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #000000;
+    -fx-font-size: 10px;
+    -fx-text-fill: white;    
+}
+
+.button:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+}
+
+.button:pressed{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#chatEnviar{
+    -fx-graphic: url("../../imagens/icones/iconeSend.png");
+}
+
+#botaoVoltar{
+    -fx-graphic: url("../../imagens/icones/iconeSend.png");
+    -fx-rotate:180;
+}
+
+#linkTrocar{
+
+}

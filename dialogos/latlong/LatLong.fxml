@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneDialogo" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.dialogos.latlong.ControladorDialogoLatLong">
+    <AnchorPane fx:id="fundoPreto" layoutX="0" layoutY="0" prefHeight="1080" prefWidth="1920" visible="false" />   
+    <AnchorPane id="caixaDialogo" fx:id="dialogoLatLong" layoutX="510" layoutY="400" prefHeight="294.0" prefWidth="902.0">
+        <Label id="tituloDialogo" fx:id="tituloConfirma" alignment="CENTER" layoutX="0" layoutY="50" prefWidth="900" text="" /> 
+        <Label id="descricaoDialogo" fx:id="descricaoConfirma" alignment="CENTER" layoutX="0" layoutY="100" prefWidth="900" text="" /> 
+        <Button id="botaoJanela" defaultButton="true" layoutX="463.0" layoutY="219.0" maxHeight="41.0" maxWidth="169.0" mnemonicParsing="false" onAction="#acaoBotaoOk" prefHeight="41.0" prefWidth="139.0" text="OK" />
+        <Button id="botaoJanela" cancelButton="true" layoutX="246.0" layoutY="219.0" maxHeight="41.0" maxWidth="169.0" mnemonicParsing="false" onAction="#acaoBotaoCancelar" prefHeight="41.0" prefWidth="169.0" text="Cancelar" />
+      <TextField fx:id="campoLat" layoutX="92.0" layoutY="163.0" prefHeight="39.0" prefWidth="325.0" />
+      <TextField fx:id="campoLong" layoutX="463.0" layoutY="163.0" prefHeight="26.0" prefWidth="325.0" />
+      <Label layoutX="93.0" layoutY="142.0" text="Latitude:" />
+      <Label layoutX="463.0" layoutY="142.0" text="Longitude:" />
+    </AnchorPane>
+</AnchorPane>

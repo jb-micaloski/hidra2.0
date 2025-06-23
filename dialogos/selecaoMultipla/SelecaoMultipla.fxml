@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneSelecao" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.dialogos.selecaoMultipla.ControladorDialogoSelecaoMultipla">
+    <children>
+        <AnchorPane layoutX="0" layoutY="0" onMouseClicked="#ocultarCliqueFora" prefHeight="1080.0" prefWidth="1920.0" />   
+        <AnchorPane id="caixaDialogo" fx:id="selecao" layoutY="209.0" prefHeight="450" prefWidth="678.0">
+            <children>
+                <Label id="tituloDialogo" fx:id="tituloSelecao" alignment="CENTER" layoutX="15.0" layoutY="32.0" prefHeight="15.0" prefWidth="605.0" text="" /> 
+                <Label id="descricaoDialogo" fx:id="descricaoSelecao" alignment="CENTER" layoutX="15.0" layoutY="82.0" prefHeight="15.0" prefWidth="605.0" text="" />
+                <ListView id="listaDialogoSelecaoMultipla" fx:id="listaItens" layoutX="18.0" layoutY="108.0" onMouseClicked="#acaoCliqueMouse" prefHeight="217.0" prefWidth="605.0" /> 
+                <Button id="botaoJanela" fx:id="botaoOk" layoutX="370.0" layoutY="364.0" maxHeight="41.0" maxWidth="150.0" mnemonicParsing="false" onAction="#acaoBotaoOk" text="Ok" />
+                <Button id="botaoJanela" layoutX="149.0" layoutY="364.0" maxHeight="41.0" maxWidth="150.0" mnemonicParsing="false" onAction="#acaoBotaoCancelar" text="Cancelar" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

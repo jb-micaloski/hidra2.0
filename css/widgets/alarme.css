@@ -1,0 +1,75 @@
+#painelAlarmes {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+#tableViewAlarmes .column-header-background { visibility: hidden; -fx-padding: -1em; }
+
+#tableViewAlarmes .table-row-cell .table-cell, #tableViewAlarmes .scroll-bar .increment-button, #tableViewAlarmes .scroll-bar .decrement-button {
+    -fx-padding: 1px 1px 1px 3px;
+    -fx-background-color: #000000; 
+    -fx-font-size: 14px;
+    -fx-table-cell-border-color: transparent;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-inner-color: #FFFFFF;
+}
+
+#tableViewAlarmes .table-row-cell .table-cell .thumb{
+    -fx-background-color: #414141;
+}
+
+#tableViewAlarmes .table-row-cell .table-cell:hover{ 
+    -fx-font-size: 15px;
+    -fx-cursor:hand;
+}
+
+#ledVermelho{
+    -fx-graphic: url("../../imagens/icones/led_red_rec.gif");
+    -fx-background-color: transparent;
+}
+
+#ledAmarelo{
+    -fx-graphic: url("../../imagens/icones/led_yellow_rec.gif");
+    -fx-background-color: transparent;
+}
+
+#ledVermelhoPiscando{
+    -fx-graphic: url("../../imagens/icones/led_red.gif");
+    -fx-background-color: transparent;
+}
+
+#ledAmareloPiscando{
+    -fx-graphic: url("../../imagens/icones/led_yellow.gif");
+    -fx-background-color: transparent;
+}
+
+#botaoConfig{
+    -fx-graphic: url("../../imagens/icones/configuracoes.png");
+    -fx-padding: 0;  
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #000000;
+    -fx-text-fill: white;   
+    -fx-opacity: 0.4;
+}
+
+#botaoConfig:hover{   
+    -fx-opacity: 1;
+}
+
+.check-box{
+    -fx-font-size: 14px;
+    -fx-control-inner-background: #0084d3;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor:hand;
+}
+
+#anchorPaneConfig{
+    -fx-opacity: 0.95;
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}

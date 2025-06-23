@@ -1,0 +1,22 @@
+#titledPaneWidget .content {
+    -fx-control-inner-background: #000000;
+}
+
+#titledPaneWidget, #titledPaneWidget .title {
+    -fx-box-border: #555555;
+    -fx-background-color: #252929; 
+    -fx-text-fill: #FFFFFF;   
+    -fx-box-border-size: 1 0 0 1;
+}
+
+#titledPaneWidget .content .scroll-bar:vertical .track, #titledPaneWidget .content .scroll-bar:vertical .increment-button, #titledPaneWidget .content .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}
+
+#titledPaneWidget .content .scroll-bar .thumb{
+    -fx-background-color:#2d2d2d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}

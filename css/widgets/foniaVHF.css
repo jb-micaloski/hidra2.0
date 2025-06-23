@@ -1,0 +1,59 @@
+#AnchorPane{
+    -fx-background-color: #000000;
+}
+
+#botaoPPT{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: transparent;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;   
+    -fx-cursor:hand;
+}
+
+#botaoPPT:hover, #botaoPPT:selected:hover{        
+    -fx-background-color: #212121;
+    -fx-font-size: 16px; 
+}
+
+#botaoPPT:selected{
+    -fx-background-color:#50afe5;
+}
+
+#botaoPPT:pressed, #botaoPPT:default:hover:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+#botaoPPT:disabled, #botaoPPT:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #212121;
+}
+
+#botao{
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: transparent;
+    -fx-font-size: 16px;
+    -fx-text-fill: white;   
+    -fx-cursor:hand;
+}
+
+#botao:hover, #botao:selected:hover{        
+    -fx-background-color: #212121;
+    -fx-font-size: 16px; 
+}
+
+#botao:pressed, #botao:default:hover:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+#labelCanais{
+    -fx-font-size: 22px; 
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}

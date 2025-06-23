@@ -1,0 +1,83 @@
+/* 
+    Document   : instrucao
+    Created on : 18/07/2013, 15:46:27
+    Author     : beatriz, pablo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#ambienteButton {
+    -fx-graphic: url("../imagens/icones/ambiente.png");
+}
+
+#exercicioButton {
+    -fx-graphic: url("../imagens/icones/veiculo.png");
+}
+
+#botaoPlacar{
+    -fx-graphic: url("../imagens/icones/iconePlacar.png");
+}
+
+#botaoQuestionario{
+    -fx-graphic: url("../imagens/icones/iconeQuestao.png");
+}
+
+#painelJogo{
+    -fx-background-color: #1d1d1d;
+    -fx-opacity: 0.50;
+    -fx-border-color: black;
+}
+
+#painelJogo .button{
+    -fx-padding: 5 22 5 22;  
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-background-size: 200 200;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #000000;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;    
+}
+
+#painelJogo .button:hover{
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-font-size: 21px;
+    -fx-background-color: #303030
+}
+
+#painelInformacao {
+    -fx-background-color: #000000;
+    -fx-border-color:#FFFFFF;
+    -fx-border-width: 5;
+    -fx-border-style: solid;
+}
+
+#painelModalEstrategia{
+    -fx-background-color:rgba(0,0,0,0.5);
+    
+}
+
+#botaoJogar{
+    -fx-padding: 5 22 5 22;  
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-background-size: 200 200;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #060b11;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;    
+}
+
+#botaoJogar:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-font-size: 21px;
+    -fx-background-color: #303030
+}

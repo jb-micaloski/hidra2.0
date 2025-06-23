@@ -1,0 +1,1053 @@
+/* 
+    Created on : 24/03/2014, 13:38:30
+    Author     : henrique
+*/
+#painelModal{
+    -fx-background-color: #000000;
+    -fx-opacity:0.1;
+}
+#cenarioTatico{
+    -fx-background-color: #000000;
+}
+
+#painelBotoes {
+    -fx-background-color: #000000;
+    -fx-padding: 3;
+    -fx-hgap: 0;
+    -fx-vgap: 0;
+    -fx-spacing: 5;
+    -fx-opacity:1;
+    -fx-border-color: linear-gradient(to right, #505050 0%, black 0.3%, black 99.7% , #505050 100% ); 
+    -fx-border-style: solid;
+    -fx-border-size: 1;
+}
+
+#painelBotoes .button{
+    -fx-background-color: transparent;  
+    -fx-text-fill: white; 
+}
+
+#painelBotoes .button:hover{
+    -fx-background-color:#1e1e1e;
+}
+
+#painelBotoes .toggle-button{
+    -fx-background-color: transparent;
+}
+
+#painelBotoes .toggle-button:hover{
+    -fx-background-color:#1e1e1e;
+}
+
+#painelBotoes .toggle-button:selected{
+    -fx-background-color:#1e1e1e;
+}
+
+#botaoCorrecoesManuais {
+    -fx-graphic: url("../imagens/icones/iconeCorrecoesManuais.png");
+}
+
+#tarefaSelecaoToggleButton {
+    -fx-graphic: url("../imagens/icones/selecao.png");
+}
+
+#alterarCorrecaoManual{
+    -fx-graphic: url("../imagens/icones/mais.png");
+}
+#alterarCorrecaoManual:selected{
+    -fx-graphic: url("../imagens/icones/menos.png");
+}
+#tarefaCriaSimbolos {
+    -fx-graphic: url("../imagens/icones/life_buoy.png");
+}
+
+#tarefaCriaTextos {
+    -fx-graphic: url("../imagens/icones/text.png");
+}
+
+#tarefaCriaProfundidades {
+    -fx-graphic: url("../imagens/icones/depth.png");
+}
+
+#tarefaPanToggleButton {
+    -fx-graphic: url("../imagens/icones/pan.png");
+}
+
+#tarefa3DToggleButton{
+    -fx-graphic: url("../imagens/icones/3D.png");
+}
+
+#tarefaZoomToggleButton{
+    -fx-graphic: url("../imagens/icones/zoom.png");
+}
+
+#tarefaDesenhoToggleButton {
+    -fx-graphic: url("../imagens/icones/lapis.png");
+}
+
+#tarefaCompassoToggleButton {
+    -fx-graphic: url("../imagens/icones/regua.png");
+}
+
+#tarefaGradeToggleButton {
+    -fx-graphic: url("../imagens/icones/grade.png");
+}
+
+#tarefaAcompanhamentoToggleButton {
+    -fx-graphic: url("../imagens/icones/acompanhamento.png");
+}
+
+/*Mexi aqui*/
+#tarefaAcompanhamentoMarcacaoToggleButton {
+    -fx-graphic: url("../imagens/icones/linhaAcompanhamento2.png");
+}
+/*Ate Aqui*/
+#tarefaVeiculoSecundarioToggleButton {
+    -fx-graphic: url("../imagens/icones/acompanhamento.png");
+}
+
+#tarefaZoomMaisButton {
+    -fx-graphic: url("../imagens/icones/zoom_mais.png");
+}
+
+#tarefaZoomMenosButton {
+    -fx-graphic: url("../imagens/icones/zoom_menos.png");
+}
+
+#centrarTeatroToggleButton{
+    -fx-graphic: url("../imagens/icones/centrar_circulo.png");
+}
+
+#tarefaRangeRings{
+    -fx-graphic: url("../imagens/icones/range_rings.png");
+}
+
+#tarefaNorthUp{
+    -fx-graphic: url("../imagens/icones/north_up.png");
+}
+
+#modoMovimentoRadar{
+    -fx-graphic: url("../imagens/icones/movimento_relativo.png");
+}
+
+#modoMovimentoRadar:selected{
+    -fx-graphic: url("../imagens/icones/movimento_verdadeiro.png");
+}
+
+#tarefaCourseUp{
+    -fx-graphic: url("../imagens/icones/course_up.png");
+}
+
+#tarefaHeadsUp{
+    -fx-graphic: url("../imagens/icones/head_up.png");
+}
+
+#ppnToggleButton{
+    -fx-graphic: url("../imagens/icones/ppn.png");
+}
+
+#escala0125ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala0125.png");
+}
+
+#escala025ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala025.png");
+}
+
+#escala050ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala050.png");
+}
+
+#escala075ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala075.png");
+}
+
+#escala1_5ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala1_5.png");
+}
+
+#escala3ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala3.png");
+}
+
+#escala6ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala6.png");
+}
+
+#escala12ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala12.png");
+}
+
+#escala24ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala24.png");
+}
+
+#escala48ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala48.png");
+}
+
+#escala96ToggleButton{
+    -fx-graphic: url("../imagens/icones/escala96.png");
+}
+
+#escalaRadarToggleButton{
+    -fx-graphic: url("../imagens/icones/icone_radar_ct.png");
+}
+
+#modoOperacaoButton{
+    -fx-graphic: url("../imagens/icones/modoDiurno.png");
+}
+
+#modoOperacaoButton:selected{
+    -fx-graphic: url("../imagens/icones/modoNoturno.png");
+}
+
+#alterarCenarioTaticoButton{
+    -fx-graphic: url("../imagens/icones/seta_esquerda.png");
+}
+
+#alterarCenarioTaticoButton:selected{
+    -fx-graphic: url("../imagens/icones/seta_direita.png");
+}
+
+#modoStardButton{
+    -fx-graphic: url("../imagens/icones/std.png");
+}
+
+#ocultaAreaPaineis{
+    -fx-graphic: url("../imagens/icones/seta_esquerda.png");
+}
+
+#tarefaAreaExercicio{
+    -fx-graphic: url("../imagens/icones/area_poligonal.png");
+}
+
+#tarefaAreaExercicioCircular{
+    -fx-graphic: url("../imagens/icones/area_circular.png");
+}
+
+#tarefaCriarRota{
+    -fx-graphic: url("../imagens/icones/rota.png");
+}
+
+#tarefaCriarPontoFixo{
+    -fx-graphic: url("../imagens/icones/ponto_fixo.png");
+}
+
+#tarefaCriarPontoManual{
+    -fx-graphic: url("../imagens/icones/ponto_manual.png");
+}
+
+#tarefaCriarPontoMage{
+    -fx-graphic: url("../imagens/icones/ponto_mage.png");
+}
+
+#tarefaCriarPontoSplash{
+    -fx-graphic: url("../imagens/icones/ponto_splash.png");
+}
+
+#tarefaCriarPontoDatum{
+    -fx-graphic: url("../imagens/icones/ponto_datum.png");
+}
+#tarefaCriarElementoNavegacao{
+    -fx-graphic: url("../imagens/icones/elementoNavegacao.png");
+}
+
+#alternarRota:hover {
+    /*-fx-effect: dropshadow(two-pass-box , gray, 10, 0.0 , 4, 5);*/ 
+    -fx-background-color: rgba(50,50,50,0.5);
+}
+
+#alternarRota {
+    -fx-graphic: url("../imagens/icones/iconeRefresh_24x24.png");
+    -fx-background-color: transparent;
+}
+
+#cenarioTaticoToolBar {
+    -fx-opacity: 0.65;
+}
+
+#cenarioTaticoToolBar:hover {
+    -fx-opacity:1;
+}
+
+#painelLateral {
+    -fx-background-color: #212121;
+    -fx-opacity: 0;
+}
+
+#painelLateral .button:hover{
+    -fx-effect: dropshadow(two-pass-box , gray, 10, 0.0 , 4, 5); 
+}
+
+#acordiaoForm {
+    -fx-background-color: #212121;
+    -fx-opacity: 0;
+}
+
+#titled-pane:expanded .title {
+    -fx-base: #555555;       
+    -fx-text-fill: white;    
+}
+
+#titled-pane .title {
+    -fx-alignment: center;  
+    -fx-cursor: "hand";
+    -fx-focus-color: #212121;
+    -fx-font-size: 10pt;   
+    -fx-font-weight: bold;            
+    -fx-text-fill: black;    
+}
+
+#botaoVeiculoEstrategiaA{
+    -fx-graphic: url("../imagens/icones/iconeVeiculoTabelaA.png");
+}
+
+#botaoVeiculoEstrategiaB{
+    -fx-graphic: url("../imagens/icones/iconeVeiculoTabelaB.png");
+}
+
+#botaoFiltroMapas {
+    -fx-graphic: url("../imagens/icones/iconeMapas.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroRadar {
+    -fx-graphic: url("../imagens/icones/iconeRadar.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroTatico {
+    -fx-graphic: url("../imagens/icones/iconeTatico.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroMapasBarra {
+    -fx-graphic: url("../imagens/icones/iconeFiltroMapas.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroRadarBarra {
+    -fx-graphic: url("../imagens/icones/iconeFiltroRadar.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroTaticoBarra {
+    -fx-graphic: url("../imagens/icones/iconeFiltroTatico.png");
+    -fx-background-color: transparent;
+}
+
+#tituloDicaObjeto{
+    -fx-background-color: #000000;
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 14;
+    -fx-padding: 3;
+}
+
+#tabelaDicaObjeto{
+    -fx-table-cell-border-color: transparent;
+    -fx-table-cell-background-color: #1d1d1d;
+    -fx-table-header-border-color: transparent;
+    -fx-base: #AAAAAA;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #AAAAAA;
+    -fx-font-size: 14;
+}
+
+#tabelaDicaObjeto .column-header-background { visibility: hidden; -fx-padding: -1em; }
+
+#tabelaDicaObjeto .scroll-bar:horizontal .track, 
+#tabelaDicaObjeto .scroll-bar:horizontal .increment-button, 
+#tabelaDicaObjeto .scroll-bar:horizontal .decrement-button {
+    visibility: hidden;
+    -fx-padding: -1em; 
+}
+
+#arvoreFeicoes {
+    -fx-base: #AAAAAA;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #AAAAAA;
+}
+
+#tabelaFeicoes {
+    -fx-table-cell-border-color: transparent;
+    -fx-table-cell-background-color: #1d1d1d;
+    -fx-table-header-border-color: transparent;
+    -fx-base: #AAAAAA;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #AAAAAA;
+}
+
+#textoFeicoes{
+    -fx-base: #AAAAAA;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #FFFFFF;
+}
+
+#textAreaDicaObjeto{
+    -fx-base: #AAAAAA;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #FFFFFF;
+}
+
+#painelFormulario{
+    -fx-padding: 0 5 0 15;
+    -fx-border-style: none;
+    -fx-background-color: #060b11;
+}
+
+#painelSobreposto {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+painelRolagemFeicoes {
+    -fx-background-color: #F5F5F5;
+    -fx-opacity: 0.50;
+    -fx-border-color: #000000;
+}
+
+painelRolagemFeicoes:hover {
+    -fx-opacity: 0.95;
+}
+
+#painelTatico, #painelMapas, #painelRadar, #painelNotificacao,#painelSitrep,#painelAviso, #painelPMA{
+    -fx-background-color: #060b11;
+    -fx-opacity: 0.50;
+    -fx-border-color: #000000;
+}
+
+#painelTatico:hover, #painelMapas:hover, #painelRadar:hover,#painelSitrep:hover,#painelPMA:hover{
+    -fx-opacity: 0.95;
+}
+
+.column-header{
+    -fx-background-color: #AAAAAA;
+    -fx-text-fill: red;
+}
+
+#botaoSitrep{ 
+    -fx-graphic: url("../imagens/icones/iconeSitrep.png");
+}
+
+#botaoPMA{
+    -fx-graphic: url("../imagens/icones/iconePMA.png");
+}
+
+#btnMoverPanel{ 
+    -fx-graphic: url("../imagens/icones/iconeMover.png");
+    -fx-background-color: #000000;
+    -fx-opacity: 0.9;
+}
+
+#btnRotacionarPanel{
+    -fx-graphic: url("../imagens/icones/iconeGirar.png");
+    -fx-background-color: #000000;
+    -fx-opacity: 095;
+}
+
+#btnTrocarPanel{
+    -fx-graphic: url("../imagens/icones/iconeTrocar.png");
+    -fx-background-color: #000000;
+    -fx-opacity: 0.9;
+}
+
+#botaoDTI{
+    -fx-graphic: url("../imagens/icones/iconeDTI.png")
+}
+#botaoRadar{
+    -fx-graphic: url("../imagens/icones/icone_radar_ct.png")
+}
+
+#botaoMDT{
+    -fx-graphic: url("../imagens/icones/iconeMDT.png");
+}
+
+#botaoMDV{
+    -fx-graphic: url("../imagens/icones/iconeMDV.png");
+}
+
+#botaoPS{
+    -fx-graphic: url("../imagens/icones/iconePS.png");
+}
+
+#botaoIff{
+    -fx-graphic: url("../imagens/icones/iconeIFF.png");
+}
+
+#botaoClassAco{
+    -fx-graphic: url("../imagens/icones/iconeClassAco.png");
+}
+
+#botaoArbitragem{
+    -fx-graphic: url("../imagens/icones/iconeArbitragem.png");
+}
+
+#botaoNavegacao {
+    -fx-graphic: url("../imagens/icones/iconeBotaoNavegacao.png");
+}
+
+#botaoSensor {
+    -fx-graphic: url("../imagens/icones/iconeBotaoSensores.png");
+}
+
+#botaoConfigAlarme {
+    -fx-graphic: url("../imagens/icones/iconeAlarme.png");
+}
+
+#botaoVentoReal {
+    -fx-graphic: url("../imagens/icones/vento.png");
+}
+
+#botaoConfigCartas {
+    -fx-graphic: url("../imagens/icones/iconeConfiguracaoMapas.png");
+}
+
+#botaoEngajamento {
+    -fx-graphic: url("../imagens/icones/engajamento.png");
+}
+
+#btnMoverPanel:hover,#btnFecharPanel:hover,#btnFechar:hover,#btnRotacionarPanel:hover,#btnTrocarPanel:hover,#labelTitulo:hover{ 
+    -fx-opacity: 1;
+}
+
+#labelDescricao{
+    -fx-text-fill: #000000;
+    -fx-font-size: 18;
+}
+
+
+#labelTitulo{
+    -fx-background-color: #000000;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 3.0;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+}
+
+#btnFecharPanel,#btnFechar{ 
+    -fx-graphic: url("../imagens/icones/iconeFechar.png");
+    -fx-background-color: #000000;
+    -fx-opacity: 0.9;
+}
+
+#radioBtnSITREP{
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size:11px;
+}
+
+#btnApagar{
+    -fx-graphic: url("../imagens/icones/apagar.png");
+    -fx-background-color: transparent;
+}
+
+#btnApagar:pressed{
+    -fx-background-color: #000000;
+}
+
+#posicaoCursorHBox, #posicaoCursorHBox .label {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+}
+
+#posicaoCursorHBox {
+    -fx-border-color: linear-gradient(to right, #505050 0%, black 0.3%, black 99.7% , #505050 100% ); 
+    -fx-border-style: solid;
+    -fx-border-size: 1;
+}
+
+#posicaoCursorHBoxSeparator .line{
+    -fx-border-color: #DDDDDD ;
+    -fx-border-width: 0 1 0 0 ;
+}
+
+#statusHBox {
+    -fx-background-color: #ffffff;
+    -fx-opacity: 0.65;
+}
+
+#relogioButton {
+    -fx-graphic: url("../imagens/icones/relogio.png");
+}
+
+#ambienteButton{
+    -fx-graphic: url("../imagens/icones/ambiente.png");
+}
+
+#veiculoButton{
+    -fx-graphic: url("../imagens/icones/veiculo.png");
+}
+
+#botaoRelogioParado{
+    -fx-graphic: url("../imagens/icones/parar.png");
+}
+#botaoRelogioPartido{
+    -fx-graphic: url("../imagens/icones/partir.png");
+}
+#botaoPararPequeno{
+    -fx-graphic: url("../imagens/icones/parar24x24.png");
+}
+#botaoPartirPequeno{
+    -fx-graphic: url("../imagens/icones/partir24x24.png");
+}
+#botaoRelogio1x{
+    -fx-graphic: url("../imagens/icones/velocidade1.png");
+}
+#botaoRelogio2x{
+    -fx-graphic: url("../imagens/icones/escala2Kj.png");
+}
+#botaoRelogio4x{
+    -fx-graphic: url("../imagens/icones/escala4Kj.png");
+}
+#botaoRelogio8x{
+    -fx-graphic: url("../imagens/icones/escala8Kj.png");
+}
+#botaoRelogio16x{
+    -fx-graphic: url("../imagens/icones/escala16Kj.png");
+}
+#botaoRelogio32x{
+    -fx-graphic: url("../imagens/icones/escala32Kj.png");
+}
+#botaoRelogio64x{
+    -fx-graphic: url("../imagens/icones/velocidade64.png");
+}
+#botaoFF{
+    -fx-graphic: url("../imagens/icones/ff.png");
+}
+
+#botaoControleCamera{
+    -fx-font-family:"FontAwesome";
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+    -fx-font-size: 20pt; 
+}
+
+#painelNavegacao {
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: #AAAAAA;
+}
+
+#painelNavegacao .table-row-cell .table-cell{
+    -fx-alignment: CENTER;
+}
+
+#painelCores .toggle-button:selected {
+    -fx-border-style: solid;  
+    -fx-border-size: 3;
+    -fx-border-color: #AA7700;
+    -fx-effect: innershadow( gaussian , rgba(155,155,50,1) , 50,0,0,0.5 );
+}
+
+#painelLimiteDireito {
+    -fx-background-color: #000000;  
+    -fx-opacity:1;
+}
+
+#painelLimiteEsquerdo{
+    -fx-background-color: transparent;
+}
+
+#painelLimiteEsquerdoFundo{
+    -fx-background-color: #000000;  
+    -fx-border-color: linear-gradient(to right, #505050 0%, black 0.3%, black 99.7% , #505050 100% ); 
+    -fx-border-style: solid;
+    -fx-border-size: 1;
+}
+
+#titledPaneCenario , #titledPaneCenario .title {
+    -fx-box-border: #555555;
+    -fx-background-color: #252929; 
+    -fx-text-fill: #FFFFFF;   
+}
+
+#titledPaneCenarioVermelho , #titledPaneCenarioVermelho .title {
+    -fx-box-border: #555555;
+    -fx-background-color: #cc0000; 
+    -fx-text-fill: #FFFFFF;   
+}
+
+#titledPaneCenario .content .scroll-bar:vertical .track, #titledPaneCenario .content .scroll-bar:vertical .increment-button, #titledPaneCenario .content .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}
+
+#titledPaneCenario .content .scroll-bar .thumb{
+    -fx-background-color:#2d2d2d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}
+
+#aba1 .tab-label { 
+    -fx-text-fill: white;
+}
+
+#aba1 .tab-label:selected { 
+    -fx-text-fill: black;
+    -fx-border-width: 0px;
+}
+
+#aba1 {
+    -fx-background-color: #3d3d3d;
+}
+
+#aba1:selected{
+    -fx-background-color: black;
+}
+
+#tabelaForm,
+#tabelaFormSemScroll {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: #FFFFFF;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+    -fx-border-width: 0.3px;
+    -fx-table-header-border-color: #FFFFFF;
+    -fx-padding: 5;
+}
+
+#tabelaFormCorrecaoManual,
+#tabelaFormSemScroll {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: #FFFFFF;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+    -fx-border-width: 0.3px;
+    -fx-table-header-border-color: #FFFFFF;
+    -fx-padding: 5;
+}
+#tabelaFormCorrecaoManual .column-header,
+#tabelaFormSemScroll .column-header{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px;
+}
+
+#tabelaFormCorrecaoManual .column-header .label,
+#tabelaFormSemScroll .column-header .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+#tabelaFormCorrecaoManual .column,
+#tabelaFormSemScroll .column {
+    -fx-border-color: transparent;
+}
+
+#tabelaFormCorrecaoManual .table-row-cell:empty,
+#tabelaFormSemScroll .table-row-cell:empty {
+    -fx-background-color: #194373;
+    -fx-border-color: #194373;
+}
+
+#tabelaFormCorrecaoManual .table-row-cell:selected,
+#tabelaFormSemScroll .table-row-cell:selected {
+    -fx-background-color: #395393;
+    -fx-border-color: transparent;
+}
+
+#tabelaFormCorrecaoManual .table-row-cell .table-cell,
+#tabelaFormSemScroll .table-row-cell .table-cell {
+    -fx-background-color: #194373;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+#tabelaFormCorrecaoManual .table-row-cell:empty .table-cell,
+#tabelaFormSemScroll .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+.table-view .scroll-bar:vertical .track, .table-view .scroll-bar:vertical .increment-button, .table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color:#3d3d3d;
+    -fx-border-color: #1d1d1d;
+    -fx-border-size: 1;
+}
+
+.table-view .scroll-bar:horizontal .track, 
+.table-view .scroll-bar:horizontal .increment-button, 
+.table-view .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+}
+
+#tabelaFormSemScroll .scroll-bar:horizontal .track, 
+#tabelaFormSemScroll .scroll-bar:horizontal .increment-button, 
+#tabelaFormSemScroll .scroll-bar:horizontal .decrement-button {
+    visibility: hidden;
+    -fx-padding: -1em; 
+    -fx-opacity: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+}
+
+#tabelaForm .column-header,
+#tabelaFormSemScroll .column-header{
+    -fx-background-color: #194373;
+    -fx-text-fill: white;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px;
+}
+
+#tabelaForm .column-header .label,
+#tabelaFormSemScroll .column-header .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+#tabelaForm .column,
+#tabelaFormSemScroll .column {
+    -fx-border-color: transparent;
+}
+
+#tabelaForm .table-row-cell:empty,
+#tabelaFormSemScroll .table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#tabelaForm .table-row-cell:selected,
+#tabelaFormSemScroll .table-row-cell:selected {
+    -fx-background-color: #395393;
+    -fx-border-color: transparent;
+}
+
+#tabelaForm .table-row-cell .table-cell,
+#tabelaFormSemScroll .table-row-cell .table-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+#tabelaForm .table-row-cell:empty .table-cell,
+#tabelaFormSemScroll .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+#tabelaFormVer {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: transparent;
+    -fx-table-cell-border-color: #FFFFFF;
+    -fx-border-style: solid;
+    -fx-border-color: #999999;
+    -fx-border-width: 0.3px;
+    -fx-table-header-border-color: #FFFFFF;
+    -fx-padding: 5;
+}
+
+#tabelaFormVer .column-header {
+    -fx-background-color: #b00505;
+    -fx-text-fill: white;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0px;
+}
+
+#tabelaFormVer .column-header .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+#tabelaFormVer .column {
+    -fx-border-color: transparent;
+}
+
+#tabelaFormVer .table-row-cell:empty {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+#tabelaFormVer .table-row-cell:selected {
+    -fx-background-color: #df1d31;
+    -fx-border-color: transparent;
+}
+
+#tabelaFormVer .table-row-cell .table-cell{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+#tabelaFormVer .table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+#rosaDeManobra{
+    -fx-image: url("../imagens/RosaManobraCenarioTatico.png");
+}
+
+#RosaDeManobraRadarGenerico{
+    -fx-image: url("../imagens/RosaManobraRadarGenerico.png");
+}
+
+#FundoRadarGenerico{
+    -fx-image: url("../imagens/FundoRadarGenerico.png");
+}
+
+#botaoParar{
+    -fx-graphic: url("../imagens/icones/stop.png");
+}
+
+#botaoGoto{
+    -fx-graphic: url("../imagens/icones/iconeGoTo.png");
+}
+
+#botaoBuscadorTiles{
+    -fx-graphic: url("../imagens/icones/iconeBuscadorTiles.png");
+}
+
+#botaoReproduzir{
+    -fx-graphic: url("../imagens/icones/play.png");
+}
+
+#botaoPausa{
+    -fx-graphic: url("../imagens/icones/pausa.png");
+}
+
+#botaoCarregarExercicio{
+    -fx-graphic: url("../imagens/icones/carregarExercicio.png");
+}
+
+#botaoSitrepReproducaoExercicio{
+    -fx-graphic: url("../imagens/icones/sitrep.png");
+}
+
+#botaoInfoManobra{
+    -fx-graphic: url("../imagens/icones/governo.png");
+}
+
+#barraTempo .bar{
+    -fx-background-color: #AAAAAA;    
+} 
+
+#barraTempo .track{
+    -fx-background-color: transparent;
+}
+
+#barraTempoAtual .bar{
+    -fx-background-color: #AA0000;    
+} 
+
+#barraTempoAtual .track{
+    -fx-background-color: transparent;
+}
+
+#sliderTempo .track {
+    -fx-background-color: darkGrey;
+}
+
+#botaoIncidente{
+    -fx-graphic: url("../imagens/icones/centrar_circulo.png");
+}
+
+#botaoCT{
+    -fx-padding: 5 22 5 22;  
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-background-size: 200 200;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #060b11;
+    -fx-font-size: 20px;
+    -fx-text-fill: white;    
+}
+
+#botaoCT:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-font-size: 21px;
+    -fx-background-color: #303030
+}
+
+#letraCursor{
+    -fx-font-size: 9pt;   
+    -fx-text-fill: white; 
+}
+
+#gridPane{
+    -fx-background-color: transparent;
+}
+
+#painelFormulario .scroll-bar:vertical .track, #painelFormulario .scroll-bar:vertical .increment-button, #painelFormulario .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #2f2f2f;
+    -fx-border-size: 1;
+}
+
+#painelFormulario .scroll-bar .thumb {
+    -fx-background-color:#3d3d3d;
+    -fx-border-color: #1d1d1d;
+    -fx-border-size: 1;
+}
+
+#listaSitrep{
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: transparent;
+}
+
+#botaoBuscaSitrepCompleto{
+    -fx-font-family:"FontAwesome";
+    -fx-background-color: transparent;
+    -fx-text-fill: white; 
+}
+
+#botaoLiberacaoExterna{
+    -fx-font-family:"FontAwesome";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 18pt; 
+
+}
+/*#toolTipLiberacaoExterna{
+
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 10pt; 
+
+}*/
+.tree-cell{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color:transparent;
+}
+
+.tree-cell .check-box .box {
+    -fx-font-size: 13px;
+    -fx-background-color:#DDDDDD;
+    -fx-border-color:grey; 
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+} 
+
+.tree-cell .check-box:selected .mark { 
+    -fx-background-color: #009dd3; 
+}
+
+.tree-cell .check-box:indeterminate .mark { 
+    -fx-background-color: #009dd3; 
+}
+

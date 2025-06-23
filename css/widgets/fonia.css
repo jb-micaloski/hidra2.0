@@ -1,0 +1,187 @@
+#painelFonia {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+/*********** INICIO DO BLOCO DE INICIALIZAÇÃO DOS ATRIBUTOS DOS COMANDOS DA IHM DA FONIA **********
+BLOCO DE ATRIBUTOS DOS COMANDOS DE LINHAS EXTERNAS**/
+
+#CmdLinhaExt1, 
+#CmdLinhaExt2, 
+#CmdLinhaExt3, 
+#CmdLinhaExt4, 
+#CmdLinhaExt5{
+    -fx-background-color: darkgray;  
+    -fx-border-style: solid;  
+}
+
+/** BLOCO DE ATRIBUTOS DOS INDICATIVOS DE LINHAS EXTERNAS SELECIONADAS **/
+
+#IndicativoLinhaExtSelec1, 
+#IndicativoLinhaExtSelec2, 
+#IndicativoLinhaExtSelec3, 
+#IndicativoLinhaExtSelec4,
+#IndicativoLinhaExtSelec5{
+    -fx-background-color: darkgray;
+    -fx-border-style: solid;
+}
+
+/** BLOCO DE ATRIBUTOS DOS COMANDOS DE LINHAS INTERNAS GRUPADAS SEM ALTO FALANTE **/
+
+#CmdLinhaGrupoVigia, 
+#CmdLinhaIntGrupSAltoF2{
+    -fx-background-color: orange;
+    -fx-border-style: solid;    
+}
+
+/**BLOCO DO COMANDO MICROFONE
+//#CmdEstadoMicrofone:selected{ 
+//    -fx-background-color:white; 
+//}
+*/
+
+#CmdEstadoMicrofone, 
+#CmdTesteFoneOuvido{
+    -fx-background-color: darkgray;
+    -fx-border-style: solid;  
+}
+
+/** BLOCO DE ATRIBUTOS DO COMANDO DE COMUNICAÇÃO GERAL PARA OS CUBICULOS**/
+
+#CmdComunGeral{
+    -fx-background-color: black; 
+    -fx-border-style: solid;
+}
+
+
+/*** BLOCO DE ATRIBUTOS DO COMANDO DE HANDS FREE **/
+
+#CmdHandsFree{
+    -fx-background-color: darkgray;  
+    -fx-border-style: solid;
+}
+
+
+/*** BLOCO DE ATRIBUTOS DO COMANDO DE COMUNICAÇÃO EXTERNA **/
+
+#CmdExtComm{
+    -fx-background-color: darkgray;  
+    -fx-border-style: solid;
+}
+
+/*** BLOCO DE ATRIBUTOS DO COMANDO DE COMUNICAÇÃO INTERNA **/
+
+#CmdIntComm{
+    -fx-background-color: darkgray;  
+    -fx-border-style: solid;
+}
+
+
+/*** BLOCO DE ATRIBUTOS DO COMANDO DE VOLUME **/
+#SliderVolume{
+    -fx-border-style: none;
+    -fx-background-color: darkgray;
+    -fx-border-color: darkgray
+}
+
+#CmdVolume{
+    -fx-background-color: darkgray;  
+    -fx-border-style: solid;
+    -fx-background-image: url("../../imagens/VolumeFonia.png");
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: transparent;
+    -fx-background-position: center;
+}
+
+/*** BLOCO DE ATRIBUTOS DOS COMANDOS DE LINHAS INTERNAS PONTO-A-PONTO **/
+
+#CmdLinhaInt1, 
+#CmdLinhaInt2, 
+#CmdLinhaInt3, 
+#CmdLinhaInt4, 
+#CmdLinhaInt5, 
+#CmdLinhaInt6, 
+#CmdLinhaInt7,
+#CmdLinhaInt8,
+#CmdLinhaInt9, 
+#CmdLinhaInt10{ 
+    -fx-background-color: #FAFAFA; 
+    -fx-border-style: solid;
+
+}
+
+/*** BLOCO DE TRATAMENTO DE EVENTOS DOS COMANDOS DE LIGHT,  HANDSFREE,  EXT COMM,  INT COMM,  IHM OFF **/
+
+#CmdVolume:selected{ 
+    -fx-background-color: #FAFAFA;  
+    -fx-border-style:solid;
+    -fx-background-image: url("../../imagens/VolumeFonia.png");
+    -fx-background-repeat: no-repeat;
+    -fx-text-fill: transparent;
+    -fx-background-position: center;
+}
+
+
+/*#CmdExtComm:selected{ 
+    -fx-background-color: #FFFFFF; 
+}*/
+
+/*#CmdIntComm:selected{ 
+    -fx-background-color: #FFFFFF; 
+} */
+
+/*** BLOCO DE TRATAMENTO DE EVENTOS DOS COMANDOS DE SELEÇÃO DE LINHAS INTERNAS GRUPADAS SEM ALTO FALANTE **/
+
+/*Comnetado temporariamente enquanto a funcionalidade não está dispinível*/
+/*#CmdLinhaIntGrupSAltoF1:selected{ 
+    -fx-background-color:yellow; 
+}
+#CmdLinhaIntGrupSAltoF2:selected{ 
+    -fx-background-color:yellow; 
+}*/
+/*** BLOCO DE TRATAMENTO DE EVENTO DO COMANDO DE COMUNICAÇÃO GERAL PARA OS CUBICULOS**/
+
+/*Comnetado temporariamente enquanto a funcionalidade não está dispinível*/
+/*#CmdComunGeral:selected{ 
+    -fx-background-color:red; 
+}*/
+
+#painelChat{
+    -fx-background-color: black;
+}
+
+#fecharChat{
+    -fx-graphic: url("../../imagens/icones/iconeFonia28x28.png");
+    -fx-background-color: #000000;  
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+}
+
+#fecharChatAmarelo{
+    -fx-graphic: url("../../imagens/icones/iconeFoniaAmarelo28x28.png");
+    -fx-background-color: #000000;  
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+}
+
+#iniciarChat{
+    -fx-graphic: url("../../imagens/icones/iconeChat.png");
+    -fx-background-color: darkgray;  
+    -fx-cursor: hand;
+    -fx-border-style: solid;
+}
+
+#chatEnviar{
+    -fx-graphic: url("../../imagens/icones/iconeSend.png");
+    -fx-background-color: black;  
+    -fx-cursor: hand;
+}
+
+#CmdComunGeral{
+    -fx-background-color: tomato;
+}
+
+#CmdComunGeral:pressed{
+    -fx-background-color: #20b920;
+}

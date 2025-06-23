@@ -1,0 +1,69 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29/10/2014, 09:14:20
+    Author     : Rodrigo
+*/
+
+#anchorPane {
+    -fx-background-color: black;
+}
+
+#rosaDeManobra{
+    -fx-image: url("../imagens/RosaManobraRadar.png");
+}
+
+#labelGrande{
+    -fx-font-family: "OCR-A";
+    -fx-text-fill: #236D29;
+    -fx-font-size: 33px;
+}
+
+#labelMedio{
+    -fx-font-family: "OCR-A";
+    -fx-text-fill: #236D29;
+    -fx-font-size: 15px;
+    -fx-font-weight: bolder;
+}
+
+#labelPequeno{
+    -fx-font-family: "OCR-A";
+    -fx-text-fill: #236D29;
+    -fx-font-size: 12px;
+    -fx-font-weight: bolder;
+}
+
+#titledPaneRadar , #titledPaneRadar .title {
+    -fx-font-family: "OCR-A";
+    -fx-background-color: #252929; 
+    -fx-text-fill:#236D29;   
+    -fx-font-weight: bolder;
+    -fx-border-color: black;
+    -fx-box-border: #1d1d1d;
+}
+
+#painelSobrepostoRadar {
+    -fx-background-color: #1d1d1d;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+    -fx-box-border: #1d1d1d;
+}
+
+#labelTextVerdeFormulario{
+    -fx-font-family: "OCR-A";
+    -fx-font-size: 14;
+    -fx-text-fill:#236D29;   
+    -fx-font-weight: bolder;
+}
+
+#sliderRadar .thumb{
+    -fx-color: #236D29;    
+}
+
+#sliderRadar .track{
+    -fx-background-color: black;
+    
+}

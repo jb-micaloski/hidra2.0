@@ -1,0 +1,15 @@
+/* 
+    Document   : instrucao
+    Created on : 18/07/2013, 15:46:27
+    Author     : beatriz
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#ambienteButton {
+    -fx-graphic: url("../imagens/icones/ambiente.png");
+}
+
+#exercicioButton {
+    -fx-graphic: url("../imagens/icones/veiculo.png");
+}

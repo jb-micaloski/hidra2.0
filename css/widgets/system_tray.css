@@ -1,0 +1,10 @@
+#botaoSystemTray{
+    -fx-padding: 2px;
+}
+#contadorSystemTray{
+    -fx-font-size: 11px;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-background-color: #DA2820;
+}

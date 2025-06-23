@@ -1,0 +1,413 @@
+#TelaGoverno {
+    -fx-background-image: url("../imagens/governo.jpg");   
+    -fx-background-repeat: round; 
+    -fx-background-size: cover;
+}
+
+#painelModal{
+    -fx-background-color: #000000;
+    -fx-opacity:0.1;
+}
+
+#painelControle {
+    -fx-background-color:#000000;
+    -fx-opacity:0.5;
+    -fx-border-color:#FFFFFF;
+    -fx-border-width:1;
+}
+
+#leme {
+    -fx-background-image: url("../imagens/icones/leme.gif"); 
+    -fx-background-size:stretch;
+}
+
+#leme:hover {
+    -fx-cursor: w-resize;
+}
+
+#lemeFundo {
+    -fx-background-image: url("../imagens/icones/lemeFundo.png"); 
+    -fx-background-size:stretch;
+}
+
+#painelBotoes {
+    -fx-background-color: #1d1d1d;
+    -fx-opacity: 0.5;
+    -fx-background-radius: 5.0;
+    -fx-background-insets: 0.0 5.0 0.0 5.0;
+    -fx-padding: 3;
+    -fx-hgap: 0;
+    -fx-vgap: 0;
+    -fx-spacing: 5;
+}
+
+#painelBotoes:hover {
+    -fx-opacity: 0.8;     
+}
+
+#painelBotoes .toggle-button {
+    -fx-background-color: transparent;
+}
+
+#painelBotoes .toggle-button:hover {
+    -fx-background-color:#5e5e5e;
+}
+
+#painelBotoes .toggle-button:selected {
+    -fx-background-color:#000000;
+}
+
+#painelBotoes .button:disabled {
+    -fx-background-color:#FF0000;
+}
+
+#painelBotoes .button {
+    -fx-background-color: transparent;
+}
+
+#painelBotoes .button:hover {
+    -fx-background-color:#5e5e5e;
+}
+
+#painelBotoes .button:selected {
+    -fx-background-color:#000000;
+}
+
+#painelBotoes .button:disabled {
+    -fx-background-color:#FF0000;
+}
+
+#escala3ToggleButton {
+    -fx-graphic: url("../imagens/icones/escala3.png");
+}
+
+#escala6ToggleButton {
+    -fx-graphic: url("../imagens/icones/escala6.png");
+}
+
+#escala12ToggleButton {
+    -fx-graphic: url("../imagens/icones/escala12.png");
+}
+
+#escala24ToggleButton {
+    -fx-graphic: url("../imagens/icones/escala24.png");
+}
+
+#escala48ToggleButton {
+    -fx-graphic: url("../imagens/icones/escala48.png");
+}
+
+#telegrafo .toggle-button{ 
+    -fx-padding: 5 22 5 22;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-style: oblique;
+}
+
+#botaoUSB {
+    -fx-background-color:transparent;
+    -fx-text-fill:transparent;
+}
+
+#botaoUSB:hover{-fx-background-color: rgba(1,1,1,0.15);}
+
+#telegrafo #botaoAcelera {    
+    -fx-background-color: green;    
+    -fx-border-color: linear-gradient(to bottom, green 50%, darkgreen 100% );
+}
+
+#telegrafo #botaoAcelera:selected {
+    -fx-background-color: darkgreen;
+    -fx-border-color: linear-gradient(to top, darkgreen 50%, #007200 100% );
+}
+
+#telegrafo #botaoAcelera:disabled {
+    -fx-background-color: darkgreen;
+    -fx-opacity: 1.0;
+    -fx-border-color: linear-gradient(to top, darkgreen 50%, #007200 100% );
+}
+
+#telegrafo #botaoRe {        
+    -fx-background-color: red;    
+    -fx-border-color: linear-gradient(to bottom, red 50%, darkred 100% );    
+}
+
+#telegrafo #botaoRe:selected {
+    -fx-background-color: darkred;
+    -fx-border-color: linear-gradient(to top, darkred 50%, #B10000 100% );
+}
+
+#telegrafo #botaoRe:disabled {
+    -fx-background-color: darkred;
+    -fx-opacity: 1.0;
+    -fx-border-color: linear-gradient(to top, darkred 50%, #B10000 100% );
+}
+
+#telegrafo #botaoZero {        
+    -fx-background-color: #C19200;
+    -fx-border-color: linear-gradient(to bottom, #C19200 50%, #B18200 100% );
+}
+
+#telegrafo #botaoZero:selected {
+    -fx-background-color: #A17200;
+    -fx-border-color: linear-gradient(to top, #A17200 50%, #B18200 100% );
+}
+
+#telegrafo #botaoZero:disabled {
+    -fx-background-color: #A17200;
+    -fx-opacity: 1.0;
+    -fx-border-color: linear-gradient(to top, #A17200 50%, #B18200 100% );
+}
+
+.tab, .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-label {
+    -fx-text-fill: whitesmoke;
+    -fx-text-size: 20px;
+}
+
+#painelSitrep {
+    -fx-background-color: #999999;
+}
+
+.table-view, .table-view .label {
+    -fx-control-inner-background: #AAAAAA;   
+    -fx-text-fill: whitesmoke;
+}
+
+.table-view .scroll-bar:vertical .track, .table-view .scroll-bar:vertical .increment-button, .table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #909090;
+    -fx-border-color: #FFFFFF;
+    -fx-border-size: 1;
+}
+
+.table-view .scroll-bar .thumb{
+    -fx-background-color:#808080;
+    -fx-border-color: #FFFFFF;
+    -fx-border-size: 1;
+}
+
+.table-view .scroll-bar:horizontal{
+    -fx-background-color: transparent;
+    -fx-opacity: 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: #606060;    
+}
+
+.table-view .column-header .label {    
+    -fx-text-fill: whitesmoke;
+}
+
+.table-row-cell , .table-row-cell:empty {    
+/*    -fx-border-color: transparent;*/
+}
+
+.table-row-cell:selected {    
+    -fx-background-color: #3e3e3e;
+}
+
+.table-row-cell .table-cell {    
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Slider                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+/*#sliderGoverno {
+
+    -fx-show-tick-labels: true ;
+    -fx-show-tick-marks: true ;
+    -fx-major-tick-unit: 100 ;
+    -fx-minor-tick-count: 3 ;
+    -fx-show-tick-labels : true ;
+    -fx-snap-to-ticks : true ;
+    -fx-block-increment : 1; 
+
+}*/
+
+#sliderGoverno:hover {
+    -fx-cursor: hand;
+}
+
+#sliderGoverno .thumb {
+    -fx-background-image: url("../imagens/botoes/seta_telegrafo.png"); 
+    -fx-background-color: transparent;
+    -fx-pref-width: 75;
+    -fx-pref-height: 35;
+    -fx-background-size: stretch;
+}
+
+#sliderGoverno .track {
+    -fx-background-color: linear-gradient(to bottom, green 0%, orange 50% , red 100% ); 
+}
+
+#sliderGoverno:disabled{
+    -fx-opacity: 1.0;
+}
+
+#labelDados {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+#labelDescricao{
+    -fx-text-fill: black;
+    -fx-font-size: 18;
+}
+
+#statusHBox {
+    -fx-background-color: #ffffff;
+    -fx-opacity: 0.75;
+}
+
+#botaoFiltroMapas {    
+    -fx-graphic: url("../imagens/icones/iconeFiltroMapas.png");	
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroRadar {
+    -fx-graphic: url("../imagens/icones/iconeFiltroRadar.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroSatelite {
+    -fx-graphic: url("../imagens/icones/filtro.png");
+    -fx-background-color: transparent;
+}
+
+#botaoFiltroTaticoBarra {
+    -fx-graphic: url("../imagens/icones/iconeFiltroTatico.png");
+    -fx-background-color: transparent;
+}
+
+#botaoModoManobra {
+    -fx-background-color: transparent;
+    -fx-background-image:  url("../imagens/icones/configuracoes.png");
+    -fx-background-size: stretch;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+#botaoInfo {
+    -fx-background-color: transparent;
+    -fx-background-image:  url("../imagens/icones/info.png");
+    -fx-background-size: stretch;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+#botaoModoManobra:hover, #botaoInfo:hover {
+    -fx-background-color:#5e5e5e;
+}
+
+#botaoManobraAuto {
+    -fx-background-color: darkgreen;
+    -fx-background-image:  url("../imagens/icones/configuracoes.png");
+    -fx-background-size: stretch;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+
+#botaoManobraAuto:hover {
+    -fx-background-color:#5e5e5e;
+}
+
+#painelFormulario {
+    -fx-padding: 0 5 0 15;
+    -fx-background-color: #060b11;
+}
+
+.gauge .value, .gauge .title, .gauge .unit{
+    -fx-alignment: CENTER;
+}
+
+.gauge .unit{
+    -fx-fill: transparent;
+}
+
+#demanda .value, #balanco .title {
+    -fx-fill: transparent;
+
+}
+/*
+#gaugeAnemometro .background{
+    -fx-background-image: url("../imagens/bussola_arte.png");
+    -fx-background-size: contain;
+}*/
+
+#velocVento { 
+    -fx-font-size: 13;
+    -fx-text-fill: #999999;
+    /*-fx-fill: ladder(black, derive(white, -20%) 49%, white 50%);*/
+}
+
+#balanco .title {    
+    -fx-fill: transparent;    
+}
+
+#botaoCima{
+    -fx-graphic: url("../imagens/botoes/seta_branca_cima.png");
+}
+#botaoBaixo{
+    -fx-graphic: url("../imagens/botoes/seta_branca_baixo.png");
+}
+
+#titledPaneCenario , #titledPaneCenario .title {
+    -fx-box-border: #555555;
+    -fx-background-color: #252929; 
+    -fx-text-fill: #FFFFFF;   
+}
+
+#titledPaneCenario .content .scroll-bar:vertical .track, #titledPaneCenario .content .scroll-bar:vertical .increment-button, #titledPaneCenario .content .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #1d1d1d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}
+
+#titledPaneCenario .content .scroll-bar .thumb{
+    -fx-background-color:#2d2d2d;
+    -fx-border-color: #999999;
+    -fx-border-size: 1;
+}
+
+#painelSobreposto {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+#posicaoCursorHBox, #posicaoCursorHBox .label {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+}
+
+#posicaoCursorHBox {
+    -fx-border-color: linear-gradient(to right, #505050 0%, black 0.3%, black 99.7% , #505050 100% ); 
+    -fx-border-style: solid;
+    -fx-border-size: 1;
+}
+
+#posicaoCursorHBoxSeparator .line{
+    -fx-border-color: #DDDDDD ;
+    -fx-border-width: 0 1 0 0 ;
+}
+
+#tarefaZoomMaisButton {
+    -fx-graphic: url("../imagens/icones/zoom_mais.png");
+}
+
+#tarefaZoomMenosButton {
+    -fx-graphic: url("../imagens/icones/zoom_menos.png");
+}

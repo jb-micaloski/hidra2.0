@@ -1,0 +1,40 @@
+#painelSensores {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+#toggleButtonPainelSensores{
+    -fx-border-style: solid;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1;        
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #1d1d1d;
+    -fx-font-size: 15px;
+    -fx-text-fill: #FFFFFF;   
+}
+
+#toggleButtonPainelSensores:hover, #toggleButtonPainelSensores:selected:hover{        
+    -fx-font-size: 16px; 
+}
+
+#toggleButtonPainelSensores:selected{
+    -fx-background-color:#007200;
+}
+
+#toggleButtonPainelSensores:pressed, #toggleButtonPainelSensores:default:hover:pressed {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+}
+
+#toggleButtonPainelSensores:disabled, #toggleButtonPainelSensores:default:disabled {
+    -fx-background-color: #B10000;
+}
+
+#anchorPaneDesabilitarSensor {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}

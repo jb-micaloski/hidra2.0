@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneDialogo" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.dialogos.confirma.ControladorDialogoConfirma">
+    <AnchorPane fx:id="fundoPreto" layoutX="0" layoutY="0" prefHeight="1080" prefWidth="1920" visible="false"></AnchorPane>   
+    <AnchorPane id="caixaDialogo" fx:id="confirma" layoutX="510" layoutY="400" prefHeight="250" prefWidth="900" visible="false">
+        <Label id="tituloDialogo" fx:id="tituloConfirma" layoutX="0" layoutY="50" prefWidth="900" alignment="CENTER" text=""/> 
+        <Label id="descricaoDialogo" fx:id="descricaoConfirma" layoutX="0" layoutY="100" prefWidth="900" alignment="CENTER" text=""/> 
+        <Button id="botaoJanela"  layoutX="505" layoutY="170" mnemonicParsing="false" onAction="#acaoBotaoSim" maxHeight="41.0" maxWidth="91.0" text="Sim" />
+        <Button id="botaoJanela"  layoutX="305" layoutY="170" mnemonicParsing="false" onAction="#acaoBotaoNao" maxHeight="41.0" maxWidth="91.0" text="Não" />
+    </AnchorPane>
+</AnchorPane>

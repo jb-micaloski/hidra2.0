@@ -1,0 +1,71 @@
+.toggle-button, .button{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+.toggle-button:hover{
+    -fx-background-color:#1e1e1e;
+}
+
+.toggle-button:selected{
+    -fx-background-color:#1e1e1e;
+}
+.label{
+    -fx-text-fill:#FFFFFF;
+}
+#painelSimpass {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#FFFFFF;
+}
+#botaoCima{
+    -fx-graphic: url("../../imagens/botoes/seta_branca_cima_peq.png");
+}
+#botaoBaixo{
+    -fx-graphic: url("../../imagens/botoes/seta_branca_baixo_peq.png");
+}
+#botaoDireita{
+    -fx-graphic: url("../../imagens/botoes/seta_branca_direita_peq.png");
+}
+#botaoEsquerda{
+    -fx-graphic: url("../../imagens/botoes/seta_branca_esquerda_peq.png");
+}
+#botaoCima:pressed{
+    -fx-graphic: url("../../imagens/botoes/seta_cima_peq.png");
+}
+#botaoBaixo:pressed{
+    -fx-graphic: url("../../imagens/botoes/seta_baixo_peq.png");
+}
+#botaoDireita:pressed{
+    -fx-graphic: url("../../imagens/botoes/seta_direita_peq.png");
+}
+#botaoEsquerda:pressed{
+    -fx-graphic: url("../../imagens/botoes/seta_esquerda_peq.png");
+}
+#botaoBinoculo{
+    -fx-graphic: url("../../imagens/icones/iconeBinoculo.png");
+}
+#botaoCamera{
+    -fx-graphic: url("../../imagens/icones/iconeCamera.png");
+}
+#botaoPeloro{
+    -fx-graphic: url("../../imagens/icones/iconePeloro.png");
+}
+#botaoZoom{
+    -fx-graphic: url("../../imagens/icones/zoom.png");
+}
+#botaoZoomMais{
+    -fx-graphic: url("../../imagens/icones/zoom_mais.png");
+}
+#botaoZoomMenos{
+    -fx-graphic: url("../../imagens/icones/zoom_menos.png");
+}
+#botaoReset{
+    -fx-graphic: url("../../imagens/icones/apagar.png");
+}
+#botaoCadeadoAberto{
+    -fx-graphic: url("../../imagens/icones/iconeCadeadoAberto.png");
+}
+#botaoCadeadoFechado{
+    -fx-graphic: url("../../imagens/icones/iconeCadeadoFechado.png");
+    
+}

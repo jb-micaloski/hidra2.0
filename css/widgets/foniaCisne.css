@@ -1,0 +1,105 @@
+#anchorPaneFoniaCisne {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+#painelChat {
+    -fx-background-color: #000000;    
+    -fx-border-color: black;
+    -fx-text-fill:#AAAAAA;
+}
+
+#tableViewLinhas .column-header-background { visibility: hidden; -fx-padding: -1em; }
+
+#tableViewLinhas .table-row-cell .table-cell, #tableViewLinhas .scroll-bar .increment-button, #tableViewLinhas .scroll-bar .decrement-button {
+    -fx-padding: 1px 1px 1px 3px;
+    -fx-background-color: #000000; 
+    -fx-font-size: 16px;
+    -fx-table-cell-border-color: transparent;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-fill: #FFFFFF;
+    -fx-text-inner-color: #FFFFFF;
+}
+
+
+ #tableViewLinhas .scroll-bar .increment-button, #tableViewLinhas .scroll-bar .decrement-button {
+     -fx-pref-height: 20px;
+     -fx-pref-width: 20px;
+ }
+#tableViewLinhas .table-row-cell .table-cell .thumb{
+    -fx-background-color: #414141;
+}
+
+#tableViewLinhas .table-row-cell .table-cell:hover{ 
+    -fx-font-size: 17px;
+    -fx-cursor:hand;
+}
+
+.table-view .scroll-bar:horizontal {
+    visibility: hidden;
+    -fx-padding: -1em; 
+    -fx-opacity: 0;
+}
+
+.button{
+    -fx-border-style: solid;
+    -fx-border-color: whitesmoke;
+    -fx-border-width: 1;        
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 1;
+    -fx-background-color: #000000;
+    -fx-font-size: 10px;
+    -fx-text-fill: white;    
+}
+
+.button:hover{    
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+}
+
+.button:pressed{
+    -fx-background-color: white;
+    -fx-text-fill: black;
+}
+
+#fecharChat{
+    -fx-graphic: url("../../imagens/icones/iconeFonia28x28.png");
+}
+#fecharChatPisca{
+    -fx-graphic: url("../../imagens/icones/foniaPisca.gif");
+}
+#iniciarChat{
+    -fx-graphic: url("../../imagens/icones/iconeChatBranco.png");
+}
+#iniciarChatPisca{
+    -fx-graphic: url("../../imagens/icones/chatPisca.gif");
+}
+#chatEnviar{
+    -fx-graphic: url("../../imagens/icones/iconeSend.png");
+}
+#linhaInternaChamando{
+    -fx-graphic: url("../../imagens/icones/phoneChamando.png");
+}
+#linhaInternaDesconectado{
+    -fx-graphic: url("../../imagens/icones/phoneVermelho.png");
+}
+#linhaInternaConectado{
+    -fx-graphic: url("../../imagens/icones/phoneVerde.png");
+}
+#botaoVolume{
+    -fx-graphic: url("../../imagens/icones/volumeFonia.png");
+}
+#botaoTesteMicrofoneBranco{
+    -fx-graphic: url("../../imagens/icones/microfoneBranco.png");
+}
+#botaoTesteMicrofoneVermelho{
+    -fx-graphic: url("../../imagens/icones/microfoneVermelho.png");
+}
+#botaoTesteMicrofoneVerde{
+    -fx-graphic: url("../../imagens/icones/microfoneVerde.png");
+}
+#botaoFoneTeste{
+    -fx-graphic: url("../../imagens/icones/foneTeste.png");
+}
