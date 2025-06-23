@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneFonia" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.fonia_vhf.ControladorFoniaVHF">
+    <children>
+        <Button fx:id="botaoPPT" layoutX="208.0" layoutY="117.0" mnemonicParsing="false" onAction="#acaoPPT" prefHeight="42.0" prefWidth="83.0" text="PTT" />
+        <Button id="botao" fx:id="botaoMais" layoutX="149.0" layoutY="117.0" mnemonicParsing="false" onAction="#acaoMais" prefHeight="42.0" prefWidth="59.0" text="+" />
+        <Button id="botao" fx:id="botaoMenos" layoutX="90.0" layoutY="117.0" mnemonicParsing="false" onAction="#acaoMenos" prefHeight="42.0" prefWidth="59.0" text="-" />
+        <Button id="botao" fx:id="botaoCanal16" layoutX="208.0" layoutY="75.0" mnemonicParsing="false" onAction="#acaoCanal16" prefHeight="42.0" prefWidth="83.0" text="CH 16" />
+        <Label fx:id="labelTx" layoutX="185.0" layoutY="79.0" prefHeight="21.0" prefWidth="21.0" text="TX" textAlignment="CENTER" />
+        <Label fx:id="labelRx" layoutX="185.0" layoutY="96.0" prefHeight="21.0" prefWidth="21.0" text="RX" textAlignment="CENTER" />
+         
+        <AnchorPane fx:id="foniaVHFBloqueada" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0" style="-fx-background-color: rgba(255,255,255,0.85);">
+            <children>
+                <Label layoutX="130.0" layoutY="103.0" text="FONIA INATIVA">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children> 
+</AnchorPane>

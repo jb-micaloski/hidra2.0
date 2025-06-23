@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneEasterEgg" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.easter_egg.ControladorEasterEgg">
+    
+    <Button id="botaoQuadro" fx:id="oque" cancelButton="false" defaultButton="false" focusTraversable="false" layoutX="1300" layoutY="600" mnemonicParsing="false" prefHeight="583.0" prefWidth="846.0"/>
+    
+</AnchorPane>

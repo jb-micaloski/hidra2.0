@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneFoniaCisne" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.fonia_cisne.ControladorFoniaCisne">
+    <children>
+        <AnchorPane fx:id="foniaBloqueada" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0" style="-fx-background-color: rgba(255,255,255,0.85);">
+            <children>
+                <Label fx:id="labelIndicacaoFoniaBloqueada" alignment="CENTER" layoutX="31.0" layoutY="110.0" prefHeight="24.0" prefWidth="316.0" text="GERAL DE CUBÍCULO">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="FoniaCompleta" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0">
+            <children>
+                <TableView fx:id="tableViewLinhas" prefHeight="218.0" prefWidth="299.0">
+                    <columns>
+                        <TableColumn fx:id="colunaEstado" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" resizable="false" text="ESTADO" />
+                        <TableColumn fx:id="colunaLinha" maxWidth="269.0" prefWidth="269.0" resizable="false" text="LINHA" />
+                    </columns>
+                </TableView>
+                <Button id="iniciarChat" fx:id="iniciarChat" layoutX="299.0" layoutY="174.0" mnemonicParsing="false" onMouseClicked="#IniciarChat" prefHeight="47.0" prefWidth="79.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="1.0" />
+                <Button id="botaoVolume" fx:id="botaoVolume" layoutX="300.0" mnemonicParsing="false" onMouseClicked="#HabilitarSlider" prefHeight="48.0" prefWidth="79.0" AnchorPane.rightAnchor="1.0">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                </Button>
+                <Button id="botaoFoneTeste" fx:id="botaoTesteFoneOuvido" layoutX="300.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#TestarFoneOuvido" prefHeight="60.0" prefWidth="79.0" AnchorPane.rightAnchor="1.0">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                </Button>
+                <Button id="botaoTesteMicrofoneBranco" fx:id="botaoTesteMicrofone" layoutX="300.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#HabilitarTesteMicrofone" prefHeight="60.0" prefWidth="79.0" AnchorPane.rightAnchor="1.0">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                </Button>
+                <Slider id="SliderVolume" fx:id="VolumeSlider" blockIncrement="1.0" layoutX="331.0" layoutY="6.0" max="0.0" onMouseReleased="#SetarVolume" orientation="VERTICAL" style=": ;">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Slider>
+            </children>
+        </AnchorPane>
+        <AnchorPane id="painelChat" fx:id="painelChat" maxHeight="218.0" maxWidth="380.0" prefHeight="218.0" prefWidth="380.0" visible="false">
+            <children>
+                <TextArea fx:id="textAreaReceberChat" prefHeight="142.0" prefWidth="378.0" wrapText="true" />
+                <TextField fx:id="textFildEnviarChat" layoutY="143.0" onKeyReleased="#EnviarMsgChatEnter" prefHeight="35.0" prefWidth="298.0" />
+                <Label fx:id="ClientesConversando" layoutX="10.0" layoutY="192.0" prefHeight="14.0" prefWidth="263.0" textFill="#ffff67">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                </Label>
+                <Button id="chatEnviar" fx:id="chatEnviar" layoutX="312.0" layoutY="143.0" maxHeight="33.0" maxWidth="80.0" mnemonicParsing="false" onMouseClicked="#EnviarMsgChat" prefHeight="33.0" prefWidth="80.0" AnchorPane.rightAnchor="1.0" />
+                <Button id="fecharChat" fx:id="fecharChat" layoutX="312.0" layoutY="179.0" maxHeight="32.0" maxWidth="80.0" mnemonicParsing="false" onMouseClicked="#FecharChat" prefHeight="32.0" prefWidth="80.0" AnchorPane.rightAnchor="1.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../../css/widgets/foniaCisne.css" />
+        <URL value="@../../css/widgets/widgets.css" />
+    </stylesheets>
+</AnchorPane>

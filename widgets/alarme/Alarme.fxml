@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneAlarme" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.alarme.ControladorAlarme">
+    <children>
+      <Label layoutX="76.0" layoutY="35.0" text="Nenhum alarme ativo no momento" />
+      <TableView fx:id="tableViewAlarmes" prefWidth="380.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colunaLed" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" text="led" />
+          <TableColumn fx:id="colunaDescricao" maxWidth="1.7976931348623157E308" prefWidth="349.0" text="descricao" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="anchorPaneConfig" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="hboxConfig" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="15.0" />
+         </children></AnchorPane>
+      <Button id="botaoConfig" mnemonicParsing="false" onAction="#acaoBotaoConfig" prefHeight="25.0" prefWidth="27.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0" />
+    </children> 
+</AnchorPane>

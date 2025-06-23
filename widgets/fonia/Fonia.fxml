@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPaneFonia" fx:id="anchorPaneFonia" prefHeight="208.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.fonia.ControladorFonia">
+    <children>
+      <AnchorPane fx:id="foniaBloqueada" prefHeight="245.0" prefWidth="380.0" style="-fx-background-color: rgba(255,255,255,0.85);">
+         <children>
+            <Label fx:id="IndicacaoGeralCubiculo" alignment="CENTER" layoutX="31.0" layoutY="110.0" prefHeight="24.0" prefWidth="316.0" text="GERAL DE CUBÍCULO">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+        <AnchorPane id="FoniaCompleta" fx:id="FoniaCompleta" layoutX="30.0" prefHeight="218.0" prefWidth="320.0">
+          
+                  <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                <VBox id="VBoxLinhasExternas" prefHeight="57.0" prefWidth="320.0">
+                    <children>
+                        <AnchorPane id="AnchorPaneLinhasExternas" prefHeight="82.0" prefWidth="320.0">
+                            <children>
+                                <ToggleButton id="CmdLinhaExt1" fx:id="btnCmdLinhaExt1" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ComandarLinExt1" prefHeight="31.0" prefWidth="64.0" text=" " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinExt1" fx:id="SubMenuLinExt1" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaExt2" fx:id="btnCmdLinhaExt2" layoutX="64.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ComandarLinExt2" prefHeight="31.0" prefWidth="64.0" text=" " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinExt2" fx:id="SubMenuLinExt2" />
+                                    </contextMenu>
+                                    
+                                          <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaExt3" fx:id="btnCmdLinhaExt3" layoutX="128.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ComandarLinExt3" prefHeight="31.0" prefWidth="64.0" text=" " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinExt3" fx:id="SubMenuLinExt3" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaExt4" fx:id="btnCmdLinhaExt4" layoutX="192.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ComandarLinExt4" prefHeight="31.0" prefWidth="64.0" text=" " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinExt4" fx:id="SubMenuLinExt4" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaExt5" fx:id="btnCmdLinhaExt5" layoutX="256.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#ComandarLinExt5" prefHeight="31.0" prefWidth="64.0" text=" " textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinExt5" fx:id="SubMenuLinExt5" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <Region id="IndicativoLinhaExtSelec1" fx:id="IndicativoLinhaExtSelec1" prefHeight="26.0" prefWidth="64.0" />
+                                <Region id="IndicativoLinhaExtSelec2" fx:id="IndicativoLinhaExtSelec2" layoutX="64.0" prefHeight="26.0" prefWidth="64.0" />
+                                <Region id="IndicativoLinhaExtSelec3" fx:id="IndicativoLinhaExtSelec3" layoutX="128.0" prefHeight="26.0" prefWidth="64.0" />
+                                <Region id="IndicativoLinhaExtSelec4" fx:id="IndicativoLinhaExtSelec4" layoutX="192.0" prefHeight="26.0" prefWidth="64.0" />
+                                <Region id="IndicativoLinhaExtSelec5" fx:id="IndicativoLinhaExtSelec5" layoutX="256.0" prefHeight="26.0" prefWidth="64.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="2.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <VBox id="VBoxLinhasInternas" layoutX="4.0" layoutY="76.0" prefHeight="64.0" prefWidth="316.0">
+                    <children>
+                        <AnchorPane id="AnchorPaneLinhasInternas" prefHeight="84.0" prefWidth="246.0">
+                            <children>
+                                <ToggleButton id="CmdLinhaInt1" fx:id="btnCmdLinhaInt1" layoutX="-4.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt1" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt1" fx:id="SubMenuLinInt1" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                       
+                                      <ToggleButton id="CmdLinhaInt2" fx:id="btnCmdLinhaInt2" layoutX="60.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt2" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt2" fx:id="SubMenuLinInt2" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt3" fx:id="btnCmdLinhaInt3" layoutX="124.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt3" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt3" fx:id="SubMenuLinInt3" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt4" fx:id="btnCmdLinhaInt4" layoutX="188.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt4" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt4" fx:id="SubMenuLinInt4" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt5" fx:id="btnCmdLinhaInt5" layoutX="252.0" layoutY="-4.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt5" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt5" fx:id="SubMenuLinInt5" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt6" fx:id="btnCmdLinhaInt6" layoutX="-4.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt6" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt6" fx:id="SubMenuLinInt6" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt7" fx:id="btnCmdLinhaInt7" layoutX="60.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt7" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt7" fx:id="SubMenuLinInt7" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt8" fx:id="btnCmdLinhaInt8" layoutX="124.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt8" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt8" fx:id="SubMenuLinInt8" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt9" fx:id="btnCmdLinhaInt9" layoutX="188.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt9" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt9" fx:id="SubMenuLinInt9" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <ToggleButton id="CmdLinhaInt10" fx:id="btnCmdLinhaInt10" layoutX="252.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#ComandarLinInt10" prefHeight="31.0" prefWidth="64.0" text=" ">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <contextMenu>
+                                        <ContextMenu id="SubMenuLinInt10" fx:id="SubMenuLinInt10" />
+                                    </contextMenu>
+                                    <padding>
+                                        <Insets left="-15.0" right="-15.0" />
+                                    </padding>
+                                </ToggleButton>
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="2.0" layoutX="-4.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="2.0" layoutX="-4.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                      
+                                  </children>
+                        </AnchorPane>
+                    </children>
+                </VBox>
+                <ToggleButton id="CmdComunGeral" fx:id="btnCmdComunGeral" layoutX="256.0" layoutY="138.0" mnemonicParsing="false" onMousePressed="#ComandarComunGeral" onMouseReleased="#ComandarComunGeral" prefHeight="31.0" prefWidth="64.0" text="GERAL">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <ToggleButton id="CmdEstadoMicrofone" fx:id="CmdEstadoMicrofone" layoutX="192.0" layoutY="138.0" mnemonicParsing="false" onMouseClicked="#HabilitarTesteMicrofone" prefHeight="31.0" prefWidth="64.0" text="MIC TESTE">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                    <contextMenu>
+                        <ContextMenu id="SubMenuLinInterGrupCAltoF" />
+                    </contextMenu>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#010b14" height="17.0" layoutY="170.0" stroke="BLACK" strokeType="INSIDE" width="320.0" />
+                <ToggleButton id="CmdVolume" fx:id="CmdVolume" layoutY="187.0" mnemonicParsing="false" onMouseClicked="#HabilitarSlider" prefHeight="31.0" prefWidth="64.0" text="VOLUME">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <ToggleButton id="CmdHandsFree" fx:id="CmdHandsFree" layoutX="64.0" layoutY="187.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#ComandarHandsFree" prefHeight="31.0" prefWidth="64.0" text="HANDS FREE" textAlignment="CENTER" textOverrun="CLIP" AnchorPane.leftAnchor="64.0">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <ToggleButton id="CmdExtComm" layoutX="128.0" layoutY="187.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" textAlignment="CENTER" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <ToggleButton id="CmdIntComm" layoutX="192.0" layoutY="187.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" textAlignment="CENTER" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Bold" size="9.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+                <AnchorPane id="AnchorPaneLinhasInternasGrupSAltoF" layoutX="3.0" layoutY="139.0" prefHeight="31.0" prefWidth="189.0">
+                    <children>
+                        <ToggleButton id="CmdLinhaGrupoVigia" fx:id="btnCmdVigia" layoutX="-3.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#ComandarGrupoVigia" prefHeight="31.0" prefWidth="64.0" text=" ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="-15.0" right="-15.0" />
+                            </padding>
+                     <contextMenu>
+                        <ContextMenu id="SubMenuLinGrupada1" fx:id="SubMenuLinVigia" />
+                     </contextMenu>
+                        </ToggleButton>
+                        <ToggleButton id="CmdLinhaIntGrupSAltoF2" fx:id="btnGrupada2" layoutX="61.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="64.0" text=" ">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <padding>
+                                <Insets left="-15.0" right="-15.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton id="CmdTesteFoneOuvido" layoutX="125.0" layoutY="-1.0" mnemonicParsing="false" onMouseClicked="#TestarFoneOuvido" prefHeight="31.0" prefWidth="64.0" text="FONE TESTE">
+                            <font>
+                                <Font name="System Bold" size="9.0" />
+                            </font>
+                            <padding>
+                                <Insets left="-15.0" right="-15.0" />
+                            </padding>
+                        </ToggleButton>
+                    </children>
+                </AnchorPane>
+                <ToggleButton fx:id="iniciarChat" layoutX="256.0" layoutY="187.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#IniciarChat" prefHeight="31.0" prefWidth="64.0" textAlignment="CENTER" textOverrun="CLIP">
+                    <font>
+                        <Font name="System Bold" size="10.0" />
+                    </font>
+                    <padding>
+                        <Insets left="-15.0" right="-15.0" />
+                    </padding>
+                </ToggleButton>
+              <Slider id="SliderVolume" fx:id="VolumeSlider" blockIncrement="1.0" layoutX="25.0" layoutY="48.0" max="0.0" onMouseReleased="#SetarVolume" orientation="VERTICAL" style=": ;">
+                  <opaqueInsets>
+                      <Insets />
+                  </opaqueInsets>
+              </Slider>
+            </children>
+      
+              </AnchorPane>
+                    <AnchorPane fx:id="painelChat" layoutX="0.0" layoutY="0.0" prefHeight="245.0" prefWidth="380.0" visible="false">
+         <children>
+            <Label fx:id="ClientesConversando" layoutX="10.0" layoutY="197.0" prefHeight="14.0" prefWidth="263.0" textFill="#ffff67">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textAreaReceberChat" layoutX="10.0" layoutY="8.0" prefHeight="140.0" prefWidth="360.0" wrapText="true" />
+            <TextField fx:id="textFildEnviarChat" layoutX="10.0" layoutY="151.0" onKeyReleased="#EnviarMsgChatEnter" prefHeight="35.0" prefWidth="316.0" />
+            <ToggleButton layoutX="328.0" layoutY="151.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#EnviarMsgChat" prefHeight="34.0" prefWidth="42.0">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font></ToggleButton>
+            <ToggleButton fx:id="fecharChat" layoutX="285.0" layoutY="189.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#FecharChat" prefHeight="31.0" prefWidth="64.0">
+               <padding>
+                  <Insets left="-15.0" right="-15.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font></ToggleButton>
+         </children>
+      </AnchorPane>
+       
+    </children>
+    
+</AnchorPane>

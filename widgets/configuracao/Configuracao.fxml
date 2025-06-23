@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.configuracao.ControladorConfiguracao">
+    <children>
+        <AnchorPane fx:id="fundoPretoModal" onMouseClicked="#acaoCliqueFundoModal" prefHeight="1080.0" prefWidth="1920.0" />
+        <AnchorPane fx:id="painelConfiguracao" layoutX="1480.0" prefHeight="1080.0" prefWidth="440.0">
+            <children>
+                <TitledPane fx:id="titledPaneConfigVelocidadeVento" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="440.0" prefHeight="90.0" prefWidth="429.0" text="Unidade de velocidade do vento:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="unidadeKNVento" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeVelocidadeVento" selected="true" text="Kn">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleVento" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="unidadeKMHVento" layoutX="98.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeVelocidadeVento" text="Km/h" toggleGroup="$toggleVento" />
+                                <RadioButton fx:id="unidadeMSVento" layoutX="198.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeVelocidadeVento" text="m/s" toggleGroup="$toggleVento" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <TitledPane fx:id="titledPaneConfigDistanciaPrecisa" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="240.0" prefHeight="90.0" prefWidth="429.0" text="Unidade distância precisa:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="unidadeYDDistPrecisa" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeDistanciaPrecisa" selected="true" text="Yd">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleDistanciaPrecisa" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="unidadeMDistPrecisa" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeDistanciaPrecisa" text="m" toggleGroup="$toggleDistanciaPrecisa" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <TitledPane fx:id="titledPaneConfigVelocidade" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="340.0" prefHeight="90.0" prefWidth="429.0" text="Unidade de velocidade:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="unidadeKNVeloc" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeVelocidade" selected="true" text="Kn">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleVelocidade" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="unidadeKMHVeloc" layoutX="98.0" layoutY="21.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeVelocidade" text="Km/h" toggleGroup="$toggleVelocidade" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <Button cancelButton="true" layoutX="373.0" layoutY="8.0" mnemonicParsing="false" onAction="#acaoFechar" text="Fechar" />
+                <Button fx:id="botaoMaisAjuda" disable="true" layoutX="316.0" layoutY="8.0" mnemonicParsing="false" onAction="#acaoMaisAjuda" text="Sobre" />
+                
+                <TitledPane fx:id="titledPaneConfigDistancia" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="140.0" prefHeight="90.0" prefWidth="429.0" text="Unidade de distância:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="unidadeMN" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeDistancia" selected="true" text="Milhas Náuticas">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleDistancia" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="unidadeJD" layoutX="164.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeDistancia" text="Jardas" toggleGroup="$toggleDistancia" />
+                                <RadioButton fx:id="unidadeKM" layoutX="258.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeDistancia" text="Km" toggleGroup="$toggleDistancia" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" collapsible="false" layoutX="4.0" layoutY="842.0" prefHeight="232.0" prefWidth="429.0" text="Últimas Notificações">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ListView fx:id="listViewNotificacoes" layoutX="102.0" layoutY="81.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <Label fx:id="labelMaquina" layoutX="14.0" layoutY="11.0" prefHeight="21.0" prefWidth="293.0">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <TitledPane fx:id="titledPaneConfigCoordGeo" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="40.0" prefHeight="90.0" prefWidth="429.0" text="Formato de exibição da coordenada geográfica:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="exibicaoCoordGeoGMS" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarExibicaoCoordGeo" selected="true" text="HH°MM'SS''[E|W]">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleCoordGeo" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="exibicaoCoordGeoGDM" layoutX="174.0" layoutY="21.0" mnemonicParsing="false" onAction="#acaoTrocarExibicaoCoordGeo" text="HH°MM.MMM'[E|W]" toggleGroup="$toggleCoordGeo" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <Button fx:id="botaoCalibrarShipConsole" layoutX="120.0" layoutY="760.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" onAction="#acaoBotaoCalibrarShipConsole" text="Calibrar ShipConsole" visible="false" />
+                <TitledPane fx:id="titledPaneConfigProfundidadeAltitude" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="540.0" prefHeight="90.0" prefWidth="429.0" text="Unidade de profundidade/altitude:">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <RadioButton fx:id="unidadeFTProfAlt" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeProfundidadeAltitude" selected="true" text="Ft">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="toggleProfAlt" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="unidadeMProfAlt" layoutX="98.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeProfundidadeAltitude" text="m" toggleGroup="$toggleProfAlt" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+            <TitledPane fx:id="titledPaneConfigTemperatura" animated="false" collapsible="false" disable="true" layoutX="4.0" layoutY="640.0" prefHeight="90.0" prefWidth="429.0" text="Unidade de temperatura:">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="unidadeFTemperatura" layoutX="98.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeTemperatura" selected="true" text="ºF">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="toggleTemperatura" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="unidadeCTemperatura" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#acaoTrocarUnidadeTemperatura" text="ºC" toggleGroup="$toggleTemperatura" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../../css/widgets/configuracao.css" />
+        <URL value="@../../css/modoDiurno.css" />
+    </stylesheets>
+</AnchorPane>

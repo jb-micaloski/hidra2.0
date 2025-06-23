@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneMenuDesligar" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ipqm.gsd.hidra.ihm.widgets.menu_desligar.ControladorMenuDesligar">
+    <AnchorPane fx:id="fundoPreto" layoutX="0" layoutY="0" prefHeight="1080" prefWidth="1920" visible="false"></AnchorPane> 
+    <AnchorPane fx:id="menuDesligar" layoutX="0" layoutY="300" prefHeight="350" prefWidth="1920" visible="false">
+            <HBox prefHeight="400" layoutX="400" prefWidth="1000" spacing="120" alignment="CENTER" >
+                <Button fx:id="botaoDesligar" mnemonicParsing="false" onAction="#acaoDesligar" prefHeight="110.0" prefWidth="200.0" text="Desligar" />
+                <Button fx:id="botaoReiniciar" mnemonicParsing="false" onAction="#acaoReiniciar" prefHeight="110.0" prefWidth="200.0" text="Reiniciar" />
+                <Button fx:id="botaoLogoff" mnemonicParsing="false" onAction="#acaoLogoff" prefHeight="110.0" prefWidth="200.0" text="Logoff" />
+                <Button fx:id="botaoCancelar" mnemonicParsing="false" onAction="#acaoCancelar" prefHeight="110.0" prefWidth="200.0" text="Cancelar" />
+            </HBox>
+        </AnchorPane>
+</AnchorPane>
